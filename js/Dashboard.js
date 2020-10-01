@@ -1,14 +1,27 @@
-var drawLines = function (constructors, target,
-    xScale, yScale) {
+var drawLines = function (constructors, target, xScale, yScale) {
+    d3.select("#constructorGraph")
+        .selectAll("circle")
+        .data(constructors)
+        .enter()
+        .append("circle")
+        .attr("cx", function (constructor) {
+            return xScale(constructor.Year)
+        })
+        .attr("cy", function (contructor) {
+            return yScale(constructor.Points)
+        })
+        .attr("r", 5)
+    /*
     var lineGenerator = d3.line()
         .x(function (score) {
-            return xScale(score.year)
+            return xScale(score.Year)
         })
         .y(function (score) {
-            return yScale(score.points)
+            return yScale(score.Points)
         })
         .curve(d3.curveCardinal)
 
+    
     var lines = d3.select("svg")
         .select("#constructorGraph")
         .selectAll("g")
@@ -19,7 +32,7 @@ var drawLines = function (constructors, target,
         .attr("fill", "none")
         .attr("stroke", "black")
         .attr("stroke-width", 10)
-        .on("mouseover", function (constructors) {
+        .on("mouseover", function (constructor) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
@@ -37,10 +50,9 @@ var drawLines = function (constructors, target,
                 .classed("hidden", false)
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
-            d3.select("#pics")
-                .attr("src", "imgs/" + penguin.picture)
+            
         })
-        .on("mouseout", function (penguin) {
+        .on("mouseout", function (constructor) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
@@ -55,10 +67,12 @@ var drawLines = function (constructors, target,
 
     lines.append("path")
         .datum(function (constructor) {
-            return constructor.scores
+            return constructor.points
 
         })
         .attr("d", lineGenerator)
+
+*/
 
 }
 
@@ -156,18 +170,14 @@ var initGraph = function (constructors) {
         .attr("transform",
             "translate(" + margins.left + "," +
             margins.top + ")");
-
-    var maxDay = d3.max(constructors[1].Points,
-        function (point) {
-            return point.year
-        });
+    
 
     var xScale = d3.scaleLinear()
-        .domain([1, maxDay])
+        .domain([1950, 2020])
         .range([0, graph.width])
 
     var yScale = d3.scaleLinear()
-        .domain([0, 10])
+        .domain([0, 500])
         .range([graph.height, 0])
 
     drawAxes(graph, margins, xScale, yScale);
