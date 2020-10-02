@@ -1,16 +1,30 @@
 var drawLines = function (constructors, target, xScale, yScale) {
+    var lineGenerator = d3.line()
+        .x(function (race) {
+            return xScale(race.Year)
+        })
+        .y(function (race) {
+            return yScale(race.Points)
+        })
+        //.curve(d3.curveCardinal)
+   
+    /*
+    
     d3.select("#constructorGraph")
         .selectAll("circle")
         .data(constructors)
         .enter()
         .append("circle")
         .attr("cx", function (constructor) {
-            return xScale(constructor.Year)
+            return xScale(constructor.points)
+            
         })
+        
         .attr("cy", function (contructor) {
-            return yScale(constructor.Points)
+            return yScale(constructor.races)
         })
         .attr("r", 5)
+        */
     /*
     var lineGenerator = d3.line()
         .x(function (score) {
@@ -63,7 +77,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
 
 
         })
-
+*/
 
     lines.append("path")
         .datum(function (constructor) {
@@ -72,7 +86,6 @@ var drawLines = function (constructors, target, xScale, yScale) {
         })
         .attr("d", lineGenerator)
 
-*/
 
 }
 
@@ -188,7 +201,7 @@ var initGraph = function (constructors) {
 
 
 
-var racingPromise = d3.csv("/constructors.csv")
+var racingPromise = d3.json("/constructors.json")
 
 var successFCN = function (constructors) {
     console.log("constructors", constructors)

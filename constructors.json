@@ -1,0 +1,4587 @@
+[
+ {
+   "rowNumber": 0,
+   "Year": 1958,
+   "Position": "1",
+   "Team": "Vanwall",
+   "Points": 48
+ },
+ {
+   "rowNumber": 1,
+   "Year": 1958,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 40
+ },
+ {
+   "rowNumber": 2,
+   "Year": 1958,
+   "Position": "3",
+   "Team": "Cooper Climax",
+   "Points": 31
+ },
+ {
+   "rowNumber": 3,
+   "Year": 1958,
+   "Position": "4",
+   "Team": "BRM",
+   "Points": 18
+ },
+ {
+   "rowNumber": 4,
+   "Year": 1958,
+   "Position": "5",
+   "Team": "Maserati",
+   "Points": 6
+ },
+ {
+   "rowNumber": 5,
+   "Year": 1958,
+   "Position": "6",
+   "Team": "Lotus Climax",
+   "Points": 3
+ },
+ {
+   "rowNumber": 6,
+   "Year": 1959,
+   "Position": "1",
+   "Team": "Cooper Climax",
+   "Points": 40
+ },
+ {
+   "rowNumber": 7,
+   "Year": 1959,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 32
+ },
+ {
+   "rowNumber": 8,
+   "Year": 1959,
+   "Position": "3",
+   "Team": "BRM",
+   "Points": 18
+ },
+ {
+   "rowNumber": 9,
+   "Year": 1959,
+   "Position": "4",
+   "Team": "Lotus Climax",
+   "Points": 5
+ },
+ {
+   "rowNumber": 10,
+   "Year": 1960,
+   "Position": "1",
+   "Team": "Cooper Climax",
+   "Points": 48
+ },
+ {
+   "rowNumber": 11,
+   "Year": 1960,
+   "Position": "2",
+   "Team": "Lotus Climax",
+   "Points": 34
+ },
+ {
+   "rowNumber": 12,
+   "Year": 1960,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 26
+ },
+ {
+   "rowNumber": 13,
+   "Year": 1960,
+   "Position": "4",
+   "Team": "BRM",
+   "Points": 8
+ },
+ {
+   "rowNumber": 14,
+   "Year": 1960,
+   "Position": "5",
+   "Team": "Cooper Maserati",
+   "Points": 3
+ },
+ {
+   "rowNumber": 15,
+   "Year": 1960,
+   "Position": "6",
+   "Team": "Cooper Castellotti",
+   "Points": 3
+ },
+ {
+   "rowNumber": 16,
+   "Year": 1961,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 40
+ },
+ {
+   "rowNumber": 17,
+   "Year": 1961,
+   "Position": "2",
+   "Team": "Lotus Climax",
+   "Points": 32
+ },
+ {
+   "rowNumber": 18,
+   "Year": 1961,
+   "Position": "3",
+   "Team": "Porsche",
+   "Points": 22
+ },
+ {
+   "rowNumber": 19,
+   "Year": 1961,
+   "Position": "4",
+   "Team": "Cooper Climax",
+   "Points": 14
+ },
+ {
+   "rowNumber": 20,
+   "Year": 1961,
+   "Position": "5",
+   "Team": "BRM Climax",
+   "Points": 7
+ },
+ {
+   "rowNumber": 21,
+   "Year": 1962,
+   "Position": "1",
+   "Team": "BRM",
+   "Points": 42
+ },
+ {
+   "rowNumber": 22,
+   "Year": 1962,
+   "Position": "2",
+   "Team": "Lotus Climax",
+   "Points": 36
+ },
+ {
+   "rowNumber": 23,
+   "Year": 1962,
+   "Position": "3",
+   "Team": "Cooper Climax",
+   "Points": 29
+ },
+ {
+   "rowNumber": 24,
+   "Year": 1962,
+   "Position": "4",
+   "Team": "Lola Climax",
+   "Points": 19
+ },
+ {
+   "rowNumber": 25,
+   "Year": 1962,
+   "Position": "5",
+   "Team": "Porsche",
+   "Points": 18
+ },
+ {
+   "rowNumber": 26,
+   "Year": 1962,
+   "Position": "6",
+   "Team": "Ferrari",
+   "Points": 18
+ },
+ {
+   "rowNumber": 27,
+   "Year": 1962,
+   "Position": "7",
+   "Team": "Brabham Climax",
+   "Points": 6
+ },
+ {
+   "rowNumber": 28,
+   "Year": 1962,
+   "Position": "8",
+   "Team": "Lotus BRM",
+   "Points": 1
+ },
+ {
+   "rowNumber": 29,
+   "Year": 1963,
+   "Position": "1",
+   "Team": "Lotus Climax",
+   "Points": 54
+ },
+ {
+   "rowNumber": 30,
+   "Year": 1963,
+   "Position": "2",
+   "Team": "BRM",
+   "Points": 36
+ },
+ {
+   "rowNumber": 31,
+   "Year": 1963,
+   "Position": "3",
+   "Team": "Brabham Climax",
+   "Points": 28
+ },
+ {
+   "rowNumber": 32,
+   "Year": 1963,
+   "Position": "4",
+   "Team": "Ferrari",
+   "Points": 26
+ },
+ {
+   "rowNumber": 33,
+   "Year": 1963,
+   "Position": "5",
+   "Team": "Cooper Climax",
+   "Points": 25
+ },
+ {
+   "rowNumber": 34,
+   "Year": 1963,
+   "Position": "6",
+   "Team": "BRP BRM",
+   "Points": 6
+ },
+ {
+   "rowNumber": 35,
+   "Year": 1963,
+   "Position": "7",
+   "Team": "Porsche",
+   "Points": 5
+ },
+ {
+   "rowNumber": 36,
+   "Year": 1963,
+   "Position": "8",
+   "Team": "Lotus BRM",
+   "Points": 4
+ },
+ {
+   "rowNumber": 37,
+   "Year": 1964,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 45
+ },
+ {
+   "rowNumber": 38,
+   "Year": 1964,
+   "Position": "2",
+   "Team": "BRM",
+   "Points": 42
+ },
+ {
+   "rowNumber": 39,
+   "Year": 1964,
+   "Position": "3",
+   "Team": "Lotus Climax",
+   "Points": 37
+ },
+ {
+   "rowNumber": 40,
+   "Year": 1964,
+   "Position": "4",
+   "Team": "Brabham Climax",
+   "Points": 30
+ },
+ {
+   "rowNumber": 41,
+   "Year": 1964,
+   "Position": "5",
+   "Team": "Cooper Climax",
+   "Points": 16
+ },
+ {
+   "rowNumber": 42,
+   "Year": 1964,
+   "Position": "6",
+   "Team": "Brabham BRM",
+   "Points": 7
+ },
+ {
+   "rowNumber": 43,
+   "Year": 1964,
+   "Position": "7",
+   "Team": "BRP BRM",
+   "Points": 5
+ },
+ {
+   "rowNumber": 44,
+   "Year": 1964,
+   "Position": "8",
+   "Team": "Lotus BRM",
+   "Points": 3
+ },
+ {
+   "rowNumber": 45,
+   "Year": 1965,
+   "Position": "1",
+   "Team": "Lotus Climax",
+   "Points": 54
+ },
+ {
+   "rowNumber": 46,
+   "Year": 1965,
+   "Position": "2",
+   "Team": "BRM",
+   "Points": 45
+ },
+ {
+   "rowNumber": 47,
+   "Year": 1965,
+   "Position": "3",
+   "Team": "Brabham Climax",
+   "Points": 27
+ },
+ {
+   "rowNumber": 48,
+   "Year": 1965,
+   "Position": "4",
+   "Team": "Ferrari",
+   "Points": 26
+ },
+ {
+   "rowNumber": 49,
+   "Year": 1965,
+   "Position": "5",
+   "Team": "Cooper Climax",
+   "Points": 14
+ },
+ {
+   "rowNumber": 50,
+   "Year": 1965,
+   "Position": "6",
+   "Team": "Honda",
+   "Points": 11
+ },
+ {
+   "rowNumber": 51,
+   "Year": 1965,
+   "Position": "7",
+   "Team": "Brabham BRM",
+   "Points": 5
+ },
+ {
+   "rowNumber": 52,
+   "Year": 1965,
+   "Position": "8",
+   "Team": "Lotus BRM",
+   "Points": 2
+ },
+ {
+   "rowNumber": 53,
+   "Year": 1966,
+   "Position": "1",
+   "Team": "Brabham Repco",
+   "Points": 42
+ },
+ {
+   "rowNumber": 54,
+   "Year": 1966,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 31
+ },
+ {
+   "rowNumber": 55,
+   "Year": 1966,
+   "Position": "3",
+   "Team": "Cooper Maserati",
+   "Points": 30
+ },
+ {
+   "rowNumber": 56,
+   "Year": 1966,
+   "Position": "4",
+   "Team": "BRM",
+   "Points": 22
+ },
+ {
+   "rowNumber": 57,
+   "Year": 1966,
+   "Position": "5",
+   "Team": "Lotus BRM",
+   "Points": 13
+ },
+ {
+   "rowNumber": 58,
+   "Year": 1966,
+   "Position": "6",
+   "Team": "Lotus Climax",
+   "Points": 8
+ },
+ {
+   "rowNumber": 59,
+   "Year": 1966,
+   "Position": "7",
+   "Team": "Eagle Climax",
+   "Points": 4
+ },
+ {
+   "rowNumber": 60,
+   "Year": 1966,
+   "Position": "8",
+   "Team": "Honda",
+   "Points": 3
+ },
+ {
+   "rowNumber": 61,
+   "Year": 1966,
+   "Position": "9",
+   "Team": "McLaren Ford",
+   "Points": 2
+ },
+ {
+   "rowNumber": 62,
+   "Year": 1966,
+   "Position": "10",
+   "Team": "Brabham BRM",
+   "Points": 1
+ },
+ {
+   "rowNumber": 63,
+   "Year": 1966,
+   "Position": "11",
+   "Team": "McLaren Serenissima",
+   "Points": 1
+ },
+ {
+   "rowNumber": 64,
+   "Year": 1966,
+   "Position": "12",
+   "Team": "Brabham Climax",
+   "Points": 1
+ },
+ {
+   "rowNumber": 65,
+   "Year": 1967,
+   "Position": "1",
+   "Team": "Brabham Repco",
+   "Points": 63
+ },
+ {
+   "rowNumber": 66,
+   "Year": 1967,
+   "Position": "2",
+   "Team": "Lotus Ford",
+   "Points": 44
+ },
+ {
+   "rowNumber": 67,
+   "Year": 1967,
+   "Position": "3",
+   "Team": "Cooper Maserati",
+   "Points": 28
+ },
+ {
+   "rowNumber": 68,
+   "Year": 1967,
+   "Position": "4",
+   "Team": "Honda",
+   "Points": 20
+ },
+ {
+   "rowNumber": 69,
+   "Year": 1967,
+   "Position": "5",
+   "Team": "Ferrari",
+   "Points": 20
+ },
+ {
+   "rowNumber": 70,
+   "Year": 1967,
+   "Position": "6",
+   "Team": "BRM",
+   "Points": 17
+ },
+ {
+   "rowNumber": 71,
+   "Year": 1967,
+   "Position": "7",
+   "Team": "Eagle Weslake",
+   "Points": 13
+ },
+ {
+   "rowNumber": 72,
+   "Year": 1967,
+   "Position": "8",
+   "Team": "Cooper Climax",
+   "Points": 6
+ },
+ {
+   "rowNumber": 73,
+   "Year": 1967,
+   "Position": "9",
+   "Team": "Lotus BRM",
+   "Points": 6
+ },
+ {
+   "rowNumber": 74,
+   "Year": 1967,
+   "Position": "10",
+   "Team": "McLaren BRM",
+   "Points": 3
+ },
+ {
+   "rowNumber": 75,
+   "Year": 1967,
+   "Position": "11",
+   "Team": "Brabham Climax",
+   "Points": 2
+ },
+ {
+   "rowNumber": 76,
+   "Year": 1968,
+   "Position": "1",
+   "Team": "Lotus Ford",
+   "Points": 62
+ },
+ {
+   "rowNumber": 77,
+   "Year": 1968,
+   "Position": "2",
+   "Team": "McLaren Ford",
+   "Points": 49
+ },
+ {
+   "rowNumber": 78,
+   "Year": 1968,
+   "Position": "3",
+   "Team": "Matra Ford",
+   "Points": 45
+ },
+ {
+   "rowNumber": 79,
+   "Year": 1968,
+   "Position": "4",
+   "Team": "Ferrari",
+   "Points": 32
+ },
+ {
+   "rowNumber": 80,
+   "Year": 1968,
+   "Position": "5",
+   "Team": "BRM",
+   "Points": 28
+ },
+ {
+   "rowNumber": 81,
+   "Year": 1968,
+   "Position": "6",
+   "Team": "Honda",
+   "Points": 14
+ },
+ {
+   "rowNumber": 82,
+   "Year": 1968,
+   "Position": "7",
+   "Team": "Cooper BRM",
+   "Points": 14
+ },
+ {
+   "rowNumber": 83,
+   "Year": 1968,
+   "Position": "8",
+   "Team": "Brabham Repco",
+   "Points": 10
+ },
+ {
+   "rowNumber": 84,
+   "Year": 1968,
+   "Position": "9",
+   "Team": "Matra",
+   "Points": 8
+ },
+ {
+   "rowNumber": 85,
+   "Year": 1968,
+   "Position": "10",
+   "Team": "Mclaren BRM",
+   "Points": 3
+ },
+ {
+   "rowNumber": 86,
+   "Year": 1969,
+   "Position": "1",
+   "Team": "Matra Ford",
+   "Points": 66
+ },
+ {
+   "rowNumber": 87,
+   "Year": 1969,
+   "Position": "2",
+   "Team": "Brabham Ford",
+   "Points": 49
+ },
+ {
+   "rowNumber": 88,
+   "Year": 1969,
+   "Position": "3",
+   "Team": "Lotus Ford",
+   "Points": 47
+ },
+ {
+   "rowNumber": 89,
+   "Year": 1969,
+   "Position": "4",
+   "Team": "McLaren Ford",
+   "Points": 38
+ },
+ {
+   "rowNumber": 90,
+   "Year": 1969,
+   "Position": "5",
+   "Team": "Ferrari",
+   "Points": 7
+ },
+ {
+   "rowNumber": 91,
+   "Year": 1969,
+   "Position": "6",
+   "Team": "BRM",
+   "Points": 7
+ },
+ {
+   "rowNumber": 92,
+   "Year": 1970,
+   "Position": "1",
+   "Team": "Lotus Ford",
+   "Points": 59
+ },
+ {
+   "rowNumber": 93,
+   "Year": 1970,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 52
+ },
+ {
+   "rowNumber": 94,
+   "Year": 1970,
+   "Position": "3",
+   "Team": "March Ford",
+   "Points": 48
+ },
+ {
+   "rowNumber": 95,
+   "Year": 1970,
+   "Position": "4",
+   "Team": "Brabham Ford",
+   "Points": 35
+ },
+ {
+   "rowNumber": 96,
+   "Year": 1970,
+   "Position": "5",
+   "Team": "McLaren Ford",
+   "Points": 35
+ },
+ {
+   "rowNumber": 97,
+   "Year": 1970,
+   "Position": "6",
+   "Team": "BRM",
+   "Points": 23
+ },
+ {
+   "rowNumber": 98,
+   "Year": 1970,
+   "Position": "7",
+   "Team": "Matra",
+   "Points": 23
+ },
+ {
+   "rowNumber": 99,
+   "Year": 1970,
+   "Position": "8",
+   "Team": "Surtees Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 100,
+   "Year": 1971,
+   "Position": "1",
+   "Team": "Tyrrell Ford",
+   "Points": 73
+ },
+ {
+   "rowNumber": 101,
+   "Year": 1971,
+   "Position": "2",
+   "Team": "BRM",
+   "Points": 36
+ },
+ {
+   "rowNumber": 102,
+   "Year": 1971,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 33
+ },
+ {
+   "rowNumber": 103,
+   "Year": 1971,
+   "Position": "4",
+   "Team": "March Ford",
+   "Points": 33
+ },
+ {
+   "rowNumber": 104,
+   "Year": 1971,
+   "Position": "5",
+   "Team": "Lotus Ford",
+   "Points": 21
+ },
+ {
+   "rowNumber": 105,
+   "Year": 1971,
+   "Position": "6",
+   "Team": "McLaren Ford",
+   "Points": 10
+ },
+ {
+   "rowNumber": 106,
+   "Year": 1971,
+   "Position": "7",
+   "Team": "Matra",
+   "Points": 9
+ },
+ {
+   "rowNumber": 107,
+   "Year": 1971,
+   "Position": "8",
+   "Team": "Surtees Ford",
+   "Points": 8
+ },
+ {
+   "rowNumber": 108,
+   "Year": 1971,
+   "Position": "9",
+   "Team": "Brabham Ford",
+   "Points": 5
+ },
+ {
+   "rowNumber": 109,
+   "Year": 1972,
+   "Position": "1",
+   "Team": "Lotus Ford",
+   "Points": 61
+ },
+ {
+   "rowNumber": 110,
+   "Year": 1972,
+   "Position": "2",
+   "Team": "Tyrrell Ford",
+   "Points": 51
+ },
+ {
+   "rowNumber": 111,
+   "Year": 1972,
+   "Position": "3",
+   "Team": "McLaren Ford",
+   "Points": 47
+ },
+ {
+   "rowNumber": 112,
+   "Year": 1972,
+   "Position": "4",
+   "Team": "Ferrari",
+   "Points": 33
+ },
+ {
+   "rowNumber": 113,
+   "Year": 1972,
+   "Position": "5",
+   "Team": "Surtees Ford",
+   "Points": 18
+ },
+ {
+   "rowNumber": 114,
+   "Year": 1972,
+   "Position": "6",
+   "Team": "March Ford",
+   "Points": 15
+ },
+ {
+   "rowNumber": 115,
+   "Year": 1972,
+   "Position": "7",
+   "Team": "BRM",
+   "Points": 14
+ },
+ {
+   "rowNumber": 116,
+   "Year": 1972,
+   "Position": "8",
+   "Team": "Matra",
+   "Points": 12
+ },
+ {
+   "rowNumber": 117,
+   "Year": 1972,
+   "Position": "9",
+   "Team": "Brabham Ford",
+   "Points": 7
+ },
+ {
+   "rowNumber": 118,
+   "Year": 1973,
+   "Position": "1",
+   "Team": "Lotus Ford",
+   "Points": 92
+ },
+ {
+   "rowNumber": 119,
+   "Year": 1973,
+   "Position": "2",
+   "Team": "Tyrrell Ford",
+   "Points": 82
+ },
+ {
+   "rowNumber": 120,
+   "Year": 1973,
+   "Position": "3",
+   "Team": "McLaren Ford",
+   "Points": 58
+ },
+ {
+   "rowNumber": 121,
+   "Year": 1973,
+   "Position": "4",
+   "Team": "Brabham Ford",
+   "Points": 22
+ },
+ {
+   "rowNumber": 122,
+   "Year": 1973,
+   "Position": "5",
+   "Team": "March Ford",
+   "Points": 14
+ },
+ {
+   "rowNumber": 123,
+   "Year": 1973,
+   "Position": "6",
+   "Team": "Ferrari",
+   "Points": 12
+ },
+ {
+   "rowNumber": 124,
+   "Year": 1973,
+   "Position": "7",
+   "Team": "BRM",
+   "Points": 12
+ },
+ {
+   "rowNumber": 125,
+   "Year": 1973,
+   "Position": "8",
+   "Team": "Shadow Ford",
+   "Points": 9
+ },
+ {
+   "rowNumber": 126,
+   "Year": 1973,
+   "Position": "9",
+   "Team": "Surtees Ford",
+   "Points": 7
+ },
+ {
+   "rowNumber": 127,
+   "Year": 1973,
+   "Position": "10",
+   "Team": "Iso Marlboro Ford",
+   "Points": 2
+ },
+ {
+   "rowNumber": 128,
+   "Year": 1973,
+   "Position": "11",
+   "Team": "Tecno",
+   "Points": 1
+ },
+ {
+   "rowNumber": 129,
+   "Year": 1974,
+   "Position": "1",
+   "Team": "McLaren Ford",
+   "Points": 73
+ },
+ {
+   "rowNumber": 130,
+   "Year": 1974,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 65
+ },
+ {
+   "rowNumber": 131,
+   "Year": 1974,
+   "Position": "3",
+   "Team": "Tyrrell Ford",
+   "Points": 52
+ },
+ {
+   "rowNumber": 132,
+   "Year": 1974,
+   "Position": "4",
+   "Team": "Lotus Ford",
+   "Points": 42
+ },
+ {
+   "rowNumber": 133,
+   "Year": 1974,
+   "Position": "5",
+   "Team": "Brabham Ford",
+   "Points": 35
+ },
+ {
+   "rowNumber": 134,
+   "Year": 1974,
+   "Position": "6",
+   "Team": "Hesketh Ford",
+   "Points": 15
+ },
+ {
+   "rowNumber": 135,
+   "Year": 1974,
+   "Position": "7",
+   "Team": "BRM",
+   "Points": 10
+ },
+ {
+   "rowNumber": 136,
+   "Year": 1974,
+   "Position": "8",
+   "Team": "Shadow Ford",
+   "Points": 7
+ },
+ {
+   "rowNumber": 137,
+   "Year": 1974,
+   "Position": "9",
+   "Team": "March Ford",
+   "Points": 6
+ },
+ {
+   "rowNumber": 138,
+   "Year": 1974,
+   "Position": "10",
+   "Team": "Iso Marlboro Ford",
+   "Points": 4
+ },
+ {
+   "rowNumber": 139,
+   "Year": 1974,
+   "Position": "11",
+   "Team": "Surtees Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 140,
+   "Year": 1974,
+   "Position": "12",
+   "Team": "Lola Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 141,
+   "Year": 1975,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 72
+ },
+ {
+   "rowNumber": 142,
+   "Year": 1975,
+   "Position": "2",
+   "Team": "Brabham Ford",
+   "Points": 54
+ },
+ {
+   "rowNumber": 143,
+   "Year": 1975,
+   "Position": "3",
+   "Team": "McLaren Ford",
+   "Points": 53
+ },
+ {
+   "rowNumber": 144,
+   "Year": 1975,
+   "Position": "4",
+   "Team": "Hesketh Ford",
+   "Points": 33
+ },
+ {
+   "rowNumber": 145,
+   "Year": 1975,
+   "Position": "5",
+   "Team": "Tyrrell Ford",
+   "Points": 25
+ },
+ {
+   "rowNumber": 146,
+   "Year": 1975,
+   "Position": "6",
+   "Team": "Shadow Ford",
+   "Points": 9
+ },
+ {
+   "rowNumber": 147,
+   "Year": 1975,
+   "Position": "7",
+   "Team": "Lotus Ford",
+   "Points": 9
+ },
+ {
+   "rowNumber": 148,
+   "Year": 1975,
+   "Position": "8",
+   "Team": "March Ford",
+   "Points": 7
+ },
+ {
+   "rowNumber": 149,
+   "Year": 1975,
+   "Position": "9",
+   "Team": "Frank Williams Racing Cars/Williams",
+   "Points": 6
+ },
+ {
+   "rowNumber": 150,
+   "Year": 1975,
+   "Position": "10",
+   "Team": "Parnelli Ford",
+   "Points": 5
+ },
+ {
+   "rowNumber": 151,
+   "Year": 1975,
+   "Position": "11",
+   "Team": "Hill Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 152,
+   "Year": 1975,
+   "Position": "12",
+   "Team": "Penske Ford",
+   "Points": 2
+ },
+ {
+   "rowNumber": 153,
+   "Year": 1975,
+   "Position": "13",
+   "Team": "Ensign Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 154,
+   "Year": 1976,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 83
+ },
+ {
+   "rowNumber": 155,
+   "Year": 1976,
+   "Position": "2",
+   "Team": "McLaren Ford",
+   "Points": 74
+ },
+ {
+   "rowNumber": 156,
+   "Year": 1976,
+   "Position": "3",
+   "Team": "Tyrrell Ford",
+   "Points": 71
+ },
+ {
+   "rowNumber": 157,
+   "Year": 1976,
+   "Position": "4",
+   "Team": "Lotus Ford",
+   "Points": 29
+ },
+ {
+   "rowNumber": 158,
+   "Year": 1976,
+   "Position": "5",
+   "Team": "Penske Ford",
+   "Points": 20
+ },
+ {
+   "rowNumber": 159,
+   "Year": 1976,
+   "Position": "6",
+   "Team": "Ligier Matra",
+   "Points": 20
+ },
+ {
+   "rowNumber": 160,
+   "Year": 1976,
+   "Position": "7",
+   "Team": "March Ford",
+   "Points": 19
+ },
+ {
+   "rowNumber": 161,
+   "Year": 1976,
+   "Position": "8",
+   "Team": "Shadow Ford",
+   "Points": 10
+ },
+ {
+   "rowNumber": 162,
+   "Year": 1976,
+   "Position": "9",
+   "Team": "Brabham Alfa Romeo",
+   "Points": 9
+ },
+ {
+   "rowNumber": 163,
+   "Year": 1976,
+   "Position": "10",
+   "Team": "Surtees Ford",
+   "Points": 7
+ },
+ {
+   "rowNumber": 164,
+   "Year": 1976,
+   "Position": "11",
+   "Team": "Fittipaldi Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 165,
+   "Year": 1976,
+   "Position": "12",
+   "Team": "Ensign Ford",
+   "Points": 2
+ },
+ {
+   "rowNumber": 166,
+   "Year": 1976,
+   "Position": "13",
+   "Team": "Parnelli Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 167,
+   "Year": 1977,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 95
+ },
+ {
+   "rowNumber": 168,
+   "Year": 1977,
+   "Position": "2",
+   "Team": "Lotus Ford",
+   "Points": 62
+ },
+ {
+   "rowNumber": 169,
+   "Year": 1977,
+   "Position": "3",
+   "Team": "McLaren Ford",
+   "Points": 60
+ },
+ {
+   "rowNumber": 170,
+   "Year": 1977,
+   "Position": "4",
+   "Team": "Wolf Ford",
+   "Points": 55
+ },
+ {
+   "rowNumber": 171,
+   "Year": 1977,
+   "Position": "5",
+   "Team": "Brabham Alfa Romeo",
+   "Points": 27
+ },
+ {
+   "rowNumber": 172,
+   "Year": 1977,
+   "Position": "6",
+   "Team": "Tyrrell Ford",
+   "Points": 27
+ },
+ {
+   "rowNumber": 173,
+   "Year": 1977,
+   "Position": "7",
+   "Team": "Shadow Ford",
+   "Points": 23
+ },
+ {
+   "rowNumber": 174,
+   "Year": 1977,
+   "Position": "8",
+   "Team": "Ligier Matra",
+   "Points": 18
+ },
+ {
+   "rowNumber": 175,
+   "Year": 1977,
+   "Position": "9",
+   "Team": "Fittipaldi Ford",
+   "Points": 11
+ },
+ {
+   "rowNumber": 176,
+   "Year": 1977,
+   "Position": "10",
+   "Team": "Ensign Ford",
+   "Points": 10
+ },
+ {
+   "rowNumber": 177,
+   "Year": 1977,
+   "Position": "11",
+   "Team": "Surtees Ford",
+   "Points": 6
+ },
+ {
+   "rowNumber": 178,
+   "Year": 1977,
+   "Position": "12",
+   "Team": "Penske Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 179,
+   "Year": 1978,
+   "Position": "1",
+   "Team": "Lotus Ford",
+   "Points": 86
+ },
+ {
+   "rowNumber": 180,
+   "Year": 1978,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 58
+ },
+ {
+   "rowNumber": 181,
+   "Year": 1978,
+   "Position": "3",
+   "Team": "Brabham Alfa Romeo",
+   "Points": 53
+ },
+ {
+   "rowNumber": 182,
+   "Year": 1978,
+   "Position": "4",
+   "Team": "Tyrrell Ford",
+   "Points": 38
+ },
+ {
+   "rowNumber": 183,
+   "Year": 1978,
+   "Position": "5",
+   "Team": "Wolf Ford",
+   "Points": 24
+ },
+ {
+   "rowNumber": 184,
+   "Year": 1978,
+   "Position": "6",
+   "Team": "Ligier Matra",
+   "Points": 19
+ },
+ {
+   "rowNumber": 185,
+   "Year": 1978,
+   "Position": "7",
+   "Team": "Fittipaldi Ford",
+   "Points": 17
+ },
+ {
+   "rowNumber": 186,
+   "Year": 1978,
+   "Position": "8",
+   "Team": "McLaren Ford",
+   "Points": 15
+ },
+ {
+   "rowNumber": 187,
+   "Year": 1978,
+   "Position": "9",
+   "Team": "Williams Ford",
+   "Points": 11
+ },
+ {
+   "rowNumber": 188,
+   "Year": 1978,
+   "Position": "10",
+   "Team": "Arrows Ford",
+   "Points": 11
+ },
+ {
+   "rowNumber": 189,
+   "Year": 1978,
+   "Position": "11",
+   "Team": "Shadow Ford",
+   "Points": 6
+ },
+ {
+   "rowNumber": 190,
+   "Year": 1978,
+   "Position": "12",
+   "Team": "Renault",
+   "Points": 3
+ },
+ {
+   "rowNumber": 191,
+   "Year": 1978,
+   "Position": "13",
+   "Team": "Surtees Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 192,
+   "Year": 1978,
+   "Position": "14",
+   "Team": "Ensign Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 193,
+   "Year": 1979,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 113
+ },
+ {
+   "rowNumber": 194,
+   "Year": 1979,
+   "Position": "2",
+   "Team": "Williams Ford",
+   "Points": 75
+ },
+ {
+   "rowNumber": 195,
+   "Year": 1979,
+   "Position": "3",
+   "Team": "Ligier Ford",
+   "Points": 61
+ },
+ {
+   "rowNumber": 196,
+   "Year": 1979,
+   "Position": "4",
+   "Team": "Lotus Ford",
+   "Points": 39
+ },
+ {
+   "rowNumber": 197,
+   "Year": 1979,
+   "Position": "5",
+   "Team": "Tyrrell Ford",
+   "Points": 28
+ },
+ {
+   "rowNumber": 198,
+   "Year": 1979,
+   "Position": "6",
+   "Team": "Renault",
+   "Points": 26
+ },
+ {
+   "rowNumber": 199,
+   "Year": 1979,
+   "Position": "7",
+   "Team": "McLaren Ford",
+   "Points": 15
+ },
+ {
+   "rowNumber": 200,
+   "Year": 1979,
+   "Position": "8",
+   "Team": "Brabham Ford",
+   "Points": 7
+ },
+ {
+   "rowNumber": 201,
+   "Year": 1979,
+   "Position": "9",
+   "Team": "Arrows Ford",
+   "Points": 5
+ },
+ {
+   "rowNumber": 202,
+   "Year": 1979,
+   "Position": "10",
+   "Team": "Shadow Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 203,
+   "Year": 1979,
+   "Position": "11",
+   "Team": "ATS Ford",
+   "Points": 2
+ },
+ {
+   "rowNumber": 204,
+   "Year": 1979,
+   "Position": "12",
+   "Team": "Fittipaldi Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 205,
+   "Year": 1980,
+   "Position": "1",
+   "Team": "Williams Ford",
+   "Points": 120
+ },
+ {
+   "rowNumber": 206,
+   "Year": 1980,
+   "Position": "2",
+   "Team": "Ligier Ford",
+   "Points": 66
+ },
+ {
+   "rowNumber": 207,
+   "Year": 1980,
+   "Position": "3",
+   "Team": "Brabham Ford",
+   "Points": 55
+ },
+ {
+   "rowNumber": 208,
+   "Year": 1980,
+   "Position": "4",
+   "Team": "Renault",
+   "Points": 38
+ },
+ {
+   "rowNumber": 209,
+   "Year": 1980,
+   "Position": "5",
+   "Team": "Lotus Ford",
+   "Points": 14
+ },
+ {
+   "rowNumber": 210,
+   "Year": 1980,
+   "Position": "6",
+   "Team": "Tyrrell Ford",
+   "Points": 12
+ },
+ {
+   "rowNumber": 211,
+   "Year": 1980,
+   "Position": "7",
+   "Team": "Arrows Ford",
+   "Points": 11
+ },
+ {
+   "rowNumber": 212,
+   "Year": 1980,
+   "Position": "8",
+   "Team": "Fittipaldi Ford",
+   "Points": 11
+ },
+ {
+   "rowNumber": 213,
+   "Year": 1980,
+   "Position": "9",
+   "Team": "McLaren Ford",
+   "Points": 11
+ },
+ {
+   "rowNumber": 214,
+   "Year": 1980,
+   "Position": "10",
+   "Team": "Ferrari",
+   "Points": 8
+ },
+ {
+   "rowNumber": 215,
+   "Year": 1980,
+   "Position": "11",
+   "Team": "Alfa Romeo",
+   "Points": 4
+ },
+ {
+   "rowNumber": 216,
+   "Year": 1981,
+   "Position": "1",
+   "Team": "Williams Ford",
+   "Points": 95
+ },
+ {
+   "rowNumber": 217,
+   "Year": 1981,
+   "Position": "2",
+   "Team": "Brabham Ford",
+   "Points": 61
+ },
+ {
+   "rowNumber": 218,
+   "Year": 1981,
+   "Position": "3",
+   "Team": "Renault",
+   "Points": 54
+ },
+ {
+   "rowNumber": 219,
+   "Year": 1981,
+   "Position": "4",
+   "Team": "Ligier Matra",
+   "Points": 44
+ },
+ {
+   "rowNumber": 220,
+   "Year": 1981,
+   "Position": "5",
+   "Team": "Ferrari",
+   "Points": 34
+ },
+ {
+   "rowNumber": 221,
+   "Year": 1981,
+   "Position": "6",
+   "Team": "McLaren Ford",
+   "Points": 28
+ },
+ {
+   "rowNumber": 222,
+   "Year": 1981,
+   "Position": "7",
+   "Team": "Lotus Ford",
+   "Points": 22
+ },
+ {
+   "rowNumber": 223,
+   "Year": 1981,
+   "Position": "8",
+   "Team": "Arrows Ford",
+   "Points": 10
+ },
+ {
+   "rowNumber": 224,
+   "Year": 1981,
+   "Position": "9",
+   "Team": "Alfa Romeo",
+   "Points": 10
+ },
+ {
+   "rowNumber": 225,
+   "Year": 1981,
+   "Position": "10",
+   "Team": "Tyrrell Ford",
+   "Points": 10
+ },
+ {
+   "rowNumber": 226,
+   "Year": 1981,
+   "Position": "11",
+   "Team": "Ensign Ford",
+   "Points": 5
+ },
+ {
+   "rowNumber": 227,
+   "Year": 1981,
+   "Position": "12",
+   "Team": "Theodore Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 228,
+   "Year": 1981,
+   "Position": "13",
+   "Team": "ATS Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 229,
+   "Year": 1982,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 74
+ },
+ {
+   "rowNumber": 230,
+   "Year": 1982,
+   "Position": "2",
+   "Team": "McLaren Ford",
+   "Points": 69
+ },
+ {
+   "rowNumber": 231,
+   "Year": 1982,
+   "Position": "3",
+   "Team": "Renault",
+   "Points": 62
+ },
+ {
+   "rowNumber": 232,
+   "Year": 1982,
+   "Position": "4",
+   "Team": "Williams Ford",
+   "Points": 58
+ },
+ {
+   "rowNumber": 233,
+   "Year": 1982,
+   "Position": "5",
+   "Team": "Lotus Ford",
+   "Points": 30
+ },
+ {
+   "rowNumber": 234,
+   "Year": 1982,
+   "Position": "6",
+   "Team": "Tyrrell Ford",
+   "Points": 25
+ },
+ {
+   "rowNumber": 235,
+   "Year": 1982,
+   "Position": "7",
+   "Team": "Brabham BMW",
+   "Points": 22
+ },
+ {
+   "rowNumber": 236,
+   "Year": 1982,
+   "Position": "8",
+   "Team": "Ligier Matra",
+   "Points": 20
+ },
+ {
+   "rowNumber": 237,
+   "Year": 1982,
+   "Position": "9",
+   "Team": "Brabham Ford",
+   "Points": 19
+ },
+ {
+   "rowNumber": 238,
+   "Year": 1982,
+   "Position": "10",
+   "Team": "Alfa Romeo",
+   "Points": 7
+ },
+ {
+   "rowNumber": 239,
+   "Year": 1982,
+   "Position": "11",
+   "Team": "Arrows Ford",
+   "Points": 5
+ },
+ {
+   "rowNumber": 240,
+   "Year": 1982,
+   "Position": "12",
+   "Team": "ATS Ford",
+   "Points": 4
+ },
+ {
+   "rowNumber": 241,
+   "Year": 1982,
+   "Position": "13",
+   "Team": "Osella Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 242,
+   "Year": 1982,
+   "Position": "14",
+   "Team": "Fittipaldi Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 243,
+   "Year": 1983,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 89
+ },
+ {
+   "rowNumber": 244,
+   "Year": 1983,
+   "Position": "2",
+   "Team": "Renault",
+   "Points": 79
+ },
+ {
+   "rowNumber": 245,
+   "Year": 1983,
+   "Position": "3",
+   "Team": "Brabham BMW",
+   "Points": 72
+ },
+ {
+   "rowNumber": 246,
+   "Year": 1983,
+   "Position": "4",
+   "Team": "Williams Ford",
+   "Points": 36
+ },
+ {
+   "rowNumber": 247,
+   "Year": 1983,
+   "Position": "5",
+   "Team": "McLaren Ford",
+   "Points": 34
+ },
+ {
+   "rowNumber": 248,
+   "Year": 1983,
+   "Position": "6",
+   "Team": "Alfa Romeo",
+   "Points": 18
+ },
+ {
+   "rowNumber": 249,
+   "Year": 1983,
+   "Position": "7",
+   "Team": "Tyrrell Ford",
+   "Points": 12
+ },
+ {
+   "rowNumber": 250,
+   "Year": 1983,
+   "Position": "8",
+   "Team": "Lotus Renault",
+   "Points": 11
+ },
+ {
+   "rowNumber": 251,
+   "Year": 1983,
+   "Position": "9",
+   "Team": "Toleman Hart",
+   "Points": 10
+ },
+ {
+   "rowNumber": 252,
+   "Year": 1983,
+   "Position": "10",
+   "Team": "Arrows Ford",
+   "Points": 4
+ },
+ {
+   "rowNumber": 253,
+   "Year": 1983,
+   "Position": "11",
+   "Team": "Williams Honda",
+   "Points": 2
+ },
+ {
+   "rowNumber": 254,
+   "Year": 1983,
+   "Position": "12",
+   "Team": "Theodore Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 255,
+   "Year": 1983,
+   "Position": "13",
+   "Team": "Lotus Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 256,
+   "Year": 1984,
+   "Position": "1",
+   "Team": "McLaren TAG",
+   "Points": 143
+ },
+ {
+   "rowNumber": 257,
+   "Year": 1984,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 57
+ },
+ {
+   "rowNumber": 258,
+   "Year": 1984,
+   "Position": "3",
+   "Team": "Lotus Renault",
+   "Points": 47
+ },
+ {
+   "rowNumber": 259,
+   "Year": 1984,
+   "Position": "4",
+   "Team": "Brabham BMW",
+   "Points": 38
+ },
+ {
+   "rowNumber": 260,
+   "Year": 1984,
+   "Position": "5",
+   "Team": "Renault",
+   "Points": 34
+ },
+ {
+   "rowNumber": 261,
+   "Year": 1984,
+   "Position": "6",
+   "Team": "Williams Honda",
+   "Points": 25
+ },
+ {
+   "rowNumber": 262,
+   "Year": 1984,
+   "Position": "7",
+   "Team": "Toleman Hart",
+   "Points": 16
+ },
+ {
+   "rowNumber": 263,
+   "Year": 1984,
+   "Position": "8",
+   "Team": "Alfa Romeo",
+   "Points": 11
+ },
+ {
+   "rowNumber": 264,
+   "Year": 1984,
+   "Position": "9",
+   "Team": "Arrows BMW",
+   "Points": 3
+ },
+ {
+   "rowNumber": 265,
+   "Year": 1984,
+   "Position": "10",
+   "Team": "Ligier Renault",
+   "Points": 3
+ },
+ {
+   "rowNumber": 266,
+   "Year": 1984,
+   "Position": "11",
+   "Team": "Arrows Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 267,
+   "Year": 1984,
+   "Position": "12",
+   "Team": "Osella Alfa Romeo",
+   "Points": 2
+ },
+ {
+   "rowNumber": 268,
+   "Year": 1985,
+   "Position": "1",
+   "Team": "McLaren TAG",
+   "Points": 90
+ },
+ {
+   "rowNumber": 269,
+   "Year": 1985,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 82
+ },
+ {
+   "rowNumber": 270,
+   "Year": 1985,
+   "Position": "3",
+   "Team": "Lotus Renault",
+   "Points": 71
+ },
+ {
+   "rowNumber": 271,
+   "Year": 1985,
+   "Position": "4",
+   "Team": "Williams Honda",
+   "Points": 71
+ },
+ {
+   "rowNumber": 272,
+   "Year": 1985,
+   "Position": "5",
+   "Team": "Brabham BMW",
+   "Points": 26
+ },
+ {
+   "rowNumber": 273,
+   "Year": 1985,
+   "Position": "6",
+   "Team": "Ligier Renault",
+   "Points": 23
+ },
+ {
+   "rowNumber": 274,
+   "Year": 1985,
+   "Position": "7",
+   "Team": "Renault",
+   "Points": 16
+ },
+ {
+   "rowNumber": 275,
+   "Year": 1985,
+   "Position": "8",
+   "Team": "Arrows BMW",
+   "Points": 14
+ },
+ {
+   "rowNumber": 276,
+   "Year": 1985,
+   "Position": "9",
+   "Team": "Tyrrell Ford",
+   "Points": 4
+ },
+ {
+   "rowNumber": 277,
+   "Year": 1985,
+   "Position": "10",
+   "Team": "Tyrrell Renault",
+   "Points": 3
+ },
+ {
+   "rowNumber": 278,
+   "Year": 1986,
+   "Position": "1",
+   "Team": "Williams Honda",
+   "Points": 141
+ },
+ {
+   "rowNumber": 279,
+   "Year": 1986,
+   "Position": "2",
+   "Team": "McLaren TAG",
+   "Points": 96
+ },
+ {
+   "rowNumber": 280,
+   "Year": 1986,
+   "Position": "3",
+   "Team": "Lotus Renault",
+   "Points": 58
+ },
+ {
+   "rowNumber": 281,
+   "Year": 1986,
+   "Position": "4",
+   "Team": "Ferrari",
+   "Points": 37
+ },
+ {
+   "rowNumber": 282,
+   "Year": 1986,
+   "Position": "5",
+   "Team": "Ligier Renault",
+   "Points": 29
+ },
+ {
+   "rowNumber": 283,
+   "Year": 1986,
+   "Position": "6",
+   "Team": "Benetton BMW",
+   "Points": 19
+ },
+ {
+   "rowNumber": 284,
+   "Year": 1986,
+   "Position": "7",
+   "Team": "Tyrrell Renault",
+   "Points": 11
+ },
+ {
+   "rowNumber": 285,
+   "Year": 1986,
+   "Position": "8",
+   "Team": "Lola Ford",
+   "Points": 6
+ },
+ {
+   "rowNumber": 286,
+   "Year": 1986,
+   "Position": "9",
+   "Team": "Brabham BMW",
+   "Points": 2
+ },
+ {
+   "rowNumber": 287,
+   "Year": 1986,
+   "Position": "10",
+   "Team": "Arrows BMW",
+   "Points": 1
+ },
+ {
+   "rowNumber": 288,
+   "Year": 1987,
+   "Position": "1",
+   "Team": "Williams Honda",
+   "Points": 137
+ },
+ {
+   "rowNumber": 289,
+   "Year": 1987,
+   "Position": "2",
+   "Team": "McLaren TAG",
+   "Points": 76
+ },
+ {
+   "rowNumber": 290,
+   "Year": 1987,
+   "Position": "3",
+   "Team": "Lotus Honda",
+   "Points": 64
+ },
+ {
+   "rowNumber": 291,
+   "Year": 1987,
+   "Position": "4",
+   "Team": "Ferrari",
+   "Points": 53
+ },
+ {
+   "rowNumber": 292,
+   "Year": 1987,
+   "Position": "5",
+   "Team": "Benetton Ford",
+   "Points": 28
+ },
+ {
+   "rowNumber": 293,
+   "Year": 1987,
+   "Position": "6",
+   "Team": "Tyrrell Ford",
+   "Points": 11
+ },
+ {
+   "rowNumber": 294,
+   "Year": 1987,
+   "Position": "7",
+   "Team": "Arrows Megatron",
+   "Points": 11
+ },
+ {
+   "rowNumber": 295,
+   "Year": 1987,
+   "Position": "8",
+   "Team": "Brabham BMW",
+   "Points": 10
+ },
+ {
+   "rowNumber": 296,
+   "Year": 1987,
+   "Position": "9",
+   "Team": "Lola Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 297,
+   "Year": 1987,
+   "Position": "10",
+   "Team": "Zakspeed",
+   "Points": 2
+ },
+ {
+   "rowNumber": 298,
+   "Year": 1987,
+   "Position": "11",
+   "Team": "March Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 299,
+   "Year": 1987,
+   "Position": "12",
+   "Team": "Ligier Megatron",
+   "Points": 1
+ },
+ {
+   "rowNumber": 300,
+   "Year": 1987,
+   "Position": "13",
+   "Team": "AGS Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 301,
+   "Year": 1988,
+   "Position": "1",
+   "Team": "McLaren Honda",
+   "Points": 199
+ },
+ {
+   "rowNumber": 302,
+   "Year": 1988,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 65
+ },
+ {
+   "rowNumber": 303,
+   "Year": 1988,
+   "Position": "3",
+   "Team": "Benetton Ford",
+   "Points": 39
+ },
+ {
+   "rowNumber": 304,
+   "Year": 1988,
+   "Position": "4",
+   "Team": "Arrows Megatron",
+   "Points": 23
+ },
+ {
+   "rowNumber": 305,
+   "Year": 1988,
+   "Position": "5",
+   "Team": "Lotus Honda",
+   "Points": 23
+ },
+ {
+   "rowNumber": 306,
+   "Year": 1988,
+   "Position": "6",
+   "Team": "March Judd",
+   "Points": 22
+ },
+ {
+   "rowNumber": 307,
+   "Year": 1988,
+   "Position": "7",
+   "Team": "Williams Judd",
+   "Points": 20
+ },
+ {
+   "rowNumber": 308,
+   "Year": 1988,
+   "Position": "8",
+   "Team": "Tyrrell Ford",
+   "Points": 5
+ },
+ {
+   "rowNumber": 309,
+   "Year": 1988,
+   "Position": "9",
+   "Team": "Rial Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 310,
+   "Year": 1988,
+   "Position": "10",
+   "Team": "Minardi Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 311,
+   "Year": 1989,
+   "Position": "1",
+   "Team": "McLaren Honda",
+   "Points": 141
+ },
+ {
+   "rowNumber": 312,
+   "Year": 1989,
+   "Position": "2",
+   "Team": "Williams Renault",
+   "Points": 77
+ },
+ {
+   "rowNumber": 313,
+   "Year": 1989,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 59
+ },
+ {
+   "rowNumber": 314,
+   "Year": 1989,
+   "Position": "4",
+   "Team": "Benetton Ford",
+   "Points": 39
+ },
+ {
+   "rowNumber": 315,
+   "Year": 1989,
+   "Position": "5",
+   "Team": "Tyrrell Ford",
+   "Points": 16
+ },
+ {
+   "rowNumber": 316,
+   "Year": 1989,
+   "Position": "6",
+   "Team": "Lotus Judd",
+   "Points": 15
+ },
+ {
+   "rowNumber": 317,
+   "Year": 1989,
+   "Position": "7",
+   "Team": "Arrows Ford",
+   "Points": 13
+ },
+ {
+   "rowNumber": 318,
+   "Year": 1989,
+   "Position": "8",
+   "Team": "Dallara Ford",
+   "Points": 8
+ },
+ {
+   "rowNumber": 319,
+   "Year": 1989,
+   "Position": "9",
+   "Team": "Brabham Judd",
+   "Points": 8
+ },
+ {
+   "rowNumber": 320,
+   "Year": 1989,
+   "Position": "10",
+   "Team": "Onyx Ford",
+   "Points": 6
+ },
+ {
+   "rowNumber": 321,
+   "Year": 1989,
+   "Position": "11",
+   "Team": "Minardi Ford",
+   "Points": 6
+ },
+ {
+   "rowNumber": 322,
+   "Year": 1989,
+   "Position": "12",
+   "Team": "March Judd",
+   "Points": 4
+ },
+ {
+   "rowNumber": 323,
+   "Year": 1989,
+   "Position": "13",
+   "Team": "Rial Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 324,
+   "Year": 1989,
+   "Position": "14",
+   "Team": "Ligier Ford",
+   "Points": 3
+ },
+ {
+   "rowNumber": 325,
+   "Year": 1989,
+   "Position": "15",
+   "Team": "AGS Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 326,
+   "Year": 1989,
+   "Position": "16",
+   "Team": "Lola Lamborghini",
+   "Points": 1
+ },
+ {
+   "rowNumber": 327,
+   "Year": 1990,
+   "Position": "1",
+   "Team": "McLaren Honda",
+   "Points": 121
+ },
+ {
+   "rowNumber": 328,
+   "Year": 1990,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 110
+ },
+ {
+   "rowNumber": 329,
+   "Year": 1990,
+   "Position": "3",
+   "Team": "Benetton Ford",
+   "Points": 71
+ },
+ {
+   "rowNumber": 330,
+   "Year": 1990,
+   "Position": "4",
+   "Team": "Williams Renault",
+   "Points": 57
+ },
+ {
+   "rowNumber": 331,
+   "Year": 1990,
+   "Position": "5",
+   "Team": "Tyrrell Ford",
+   "Points": 16
+ },
+ {
+   "rowNumber": 332,
+   "Year": 1990,
+   "Position": "6",
+   "Team": "Lola Lamborghini",
+   "Points": 11
+ },
+ {
+   "rowNumber": 333,
+   "Year": 1990,
+   "Position": "7",
+   "Team": "Leyton House Judd",
+   "Points": 7
+ },
+ {
+   "rowNumber": 334,
+   "Year": 1990,
+   "Position": "8",
+   "Team": "Lotus Lamborghini",
+   "Points": 3
+ },
+ {
+   "rowNumber": 335,
+   "Year": 1990,
+   "Position": "9",
+   "Team": "Arrows Ford",
+   "Points": 2
+ },
+ {
+   "rowNumber": 336,
+   "Year": 1990,
+   "Position": "10",
+   "Team": "Brabham Judd",
+   "Points": 2
+ },
+ {
+   "rowNumber": 337,
+   "Year": 1991,
+   "Position": "1",
+   "Team": "McLaren Honda",
+   "Points": 139
+ },
+ {
+   "rowNumber": 338,
+   "Year": 1991,
+   "Position": "2",
+   "Team": "Williams Renault",
+   "Points": 125
+ },
+ {
+   "rowNumber": 339,
+   "Year": 1991,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 55
+ },
+ {
+   "rowNumber": 340,
+   "Year": 1991,
+   "Position": "4",
+   "Team": "Benetton Ford",
+   "Points": 38
+ },
+ {
+   "rowNumber": 341,
+   "Year": 1991,
+   "Position": "5",
+   "Team": "Jordan Ford",
+   "Points": 13
+ },
+ {
+   "rowNumber": 342,
+   "Year": 1991,
+   "Position": "6",
+   "Team": "Tyrrell Honda",
+   "Points": 12
+ },
+ {
+   "rowNumber": 343,
+   "Year": 1991,
+   "Position": "7",
+   "Team": "Minardi Ferrari",
+   "Points": 6
+ },
+ {
+   "rowNumber": 344,
+   "Year": 1991,
+   "Position": "8",
+   "Team": "Dallara Judd",
+   "Points": 5
+ },
+ {
+   "rowNumber": 345,
+   "Year": 1991,
+   "Position": "9",
+   "Team": "Lotus Judd",
+   "Points": 3
+ },
+ {
+   "rowNumber": 346,
+   "Year": 1991,
+   "Position": "10",
+   "Team": "Brabham Yamaha",
+   "Points": 3
+ },
+ {
+   "rowNumber": 347,
+   "Year": 1991,
+   "Position": "11",
+   "Team": "Lola Ford",
+   "Points": 2
+ },
+ {
+   "rowNumber": 348,
+   "Year": 1991,
+   "Position": "12",
+   "Team": "Leyton House Ilmor",
+   "Points": 1
+ },
+ {
+   "rowNumber": 349,
+   "Year": 1992,
+   "Position": "1",
+   "Team": "Williams Renault",
+   "Points": 164
+ },
+ {
+   "rowNumber": 350,
+   "Year": 1992,
+   "Position": "2",
+   "Team": "McLaren Honda",
+   "Points": 99
+ },
+ {
+   "rowNumber": 351,
+   "Year": 1992,
+   "Position": "3",
+   "Team": "Benetton Ford",
+   "Points": 91
+ },
+ {
+   "rowNumber": 352,
+   "Year": 1992,
+   "Position": "4",
+   "Team": "Ferrari",
+   "Points": 21
+ },
+ {
+   "rowNumber": 353,
+   "Year": 1992,
+   "Position": "5",
+   "Team": "Lotus Ford",
+   "Points": 13
+ },
+ {
+   "rowNumber": 354,
+   "Year": 1992,
+   "Position": "6",
+   "Team": "Tyrrell Ilmor",
+   "Points": 8
+ },
+ {
+   "rowNumber": 355,
+   "Year": 1992,
+   "Position": "7",
+   "Team": "Footwork Mugen Honda",
+   "Points": 6
+ },
+ {
+   "rowNumber": 356,
+   "Year": 1992,
+   "Position": "8",
+   "Team": "Ligier Renault",
+   "Points": 6
+ },
+ {
+   "rowNumber": 357,
+   "Year": 1992,
+   "Position": "9",
+   "Team": "March Ilmor",
+   "Points": 3
+ },
+ {
+   "rowNumber": 358,
+   "Year": 1992,
+   "Position": "10",
+   "Team": "Dallara Ferrari",
+   "Points": 2
+ },
+ {
+   "rowNumber": 359,
+   "Year": 1992,
+   "Position": "11",
+   "Team": "Jordan Yamaha",
+   "Points": 1
+ },
+ {
+   "rowNumber": 360,
+   "Year": 1992,
+   "Position": "12",
+   "Team": "Minardi Lamborghini",
+   "Points": 1
+ },
+ {
+   "rowNumber": 361,
+   "Year": 1992,
+   "Position": "13",
+   "Team": "Venturi Lamborghini",
+   "Points": 1
+ },
+ {
+   "rowNumber": 362,
+   "Year": 1993,
+   "Position": "1",
+   "Team": "Williams Renault",
+   "Points": 168
+ },
+ {
+   "rowNumber": 363,
+   "Year": 1993,
+   "Position": "2",
+   "Team": "McLaren Ford",
+   "Points": 84
+ },
+ {
+   "rowNumber": 364,
+   "Year": 1993,
+   "Position": "3",
+   "Team": "Benetton Ford",
+   "Points": 72
+ },
+ {
+   "rowNumber": 365,
+   "Year": 1993,
+   "Position": "4",
+   "Team": "Ferrari",
+   "Points": 28
+ },
+ {
+   "rowNumber": 366,
+   "Year": 1993,
+   "Position": "5",
+   "Team": "Ligier Renault",
+   "Points": 23
+ },
+ {
+   "rowNumber": 367,
+   "Year": 1993,
+   "Position": "6",
+   "Team": "Lotus Ford",
+   "Points": 12
+ },
+ {
+   "rowNumber": 368,
+   "Year": 1993,
+   "Position": "7",
+   "Team": "Sauber",
+   "Points": 12
+ },
+ {
+   "rowNumber": 369,
+   "Year": 1993,
+   "Position": "8",
+   "Team": "Minardi Ford",
+   "Points": 7
+ },
+ {
+   "rowNumber": 370,
+   "Year": 1993,
+   "Position": "9",
+   "Team": "Footwork Mugen Honda",
+   "Points": 4
+ },
+ {
+   "rowNumber": 371,
+   "Year": 1993,
+   "Position": "10",
+   "Team": "Larrousse Lamborghini",
+   "Points": 3
+ },
+ {
+   "rowNumber": 372,
+   "Year": 1993,
+   "Position": "11",
+   "Team": "Jordan Hart",
+   "Points": 3
+ },
+ {
+   "rowNumber": 373,
+   "Year": 1994,
+   "Position": "1",
+   "Team": "Williams Renault",
+   "Points": 118
+ },
+ {
+   "rowNumber": 374,
+   "Year": 1994,
+   "Position": "2",
+   "Team": "Benetton Ford",
+   "Points": 103
+ },
+ {
+   "rowNumber": 375,
+   "Year": 1994,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 71
+ },
+ {
+   "rowNumber": 376,
+   "Year": 1994,
+   "Position": "4",
+   "Team": "McLaren Peugeot",
+   "Points": 42
+ },
+ {
+   "rowNumber": 377,
+   "Year": 1994,
+   "Position": "5",
+   "Team": "Jordan Hart",
+   "Points": 28
+ },
+ {
+   "rowNumber": 378,
+   "Year": 1994,
+   "Position": "6",
+   "Team": "Ligier Renault",
+   "Points": 13
+ },
+ {
+   "rowNumber": 379,
+   "Year": 1994,
+   "Position": "7",
+   "Team": "Tyrrell Yamaha",
+   "Points": 13
+ },
+ {
+   "rowNumber": 380,
+   "Year": 1994,
+   "Position": "8",
+   "Team": "Sauber Mercedes",
+   "Points": 12
+ },
+ {
+   "rowNumber": 381,
+   "Year": 1994,
+   "Position": "9",
+   "Team": "Footwork Ford",
+   "Points": 9
+ },
+ {
+   "rowNumber": 382,
+   "Year": 1994,
+   "Position": "10",
+   "Team": "Minardi Ford",
+   "Points": 5
+ },
+ {
+   "rowNumber": 383,
+   "Year": 1994,
+   "Position": "11",
+   "Team": "Larrousse Ford",
+   "Points": 2
+ },
+ {
+   "rowNumber": 384,
+   "Year": 1995,
+   "Position": "1",
+   "Team": "Benetton Renault",
+   "Points": 137
+ },
+ {
+   "rowNumber": 385,
+   "Year": 1995,
+   "Position": "2",
+   "Team": "Williams Renault",
+   "Points": 112
+ },
+ {
+   "rowNumber": 386,
+   "Year": 1995,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 73
+ },
+ {
+   "rowNumber": 387,
+   "Year": 1995,
+   "Position": "4",
+   "Team": "McLaren Mercedes",
+   "Points": 30
+ },
+ {
+   "rowNumber": 388,
+   "Year": 1995,
+   "Position": "5",
+   "Team": "Ligier Mugen Honda",
+   "Points": 24
+ },
+ {
+   "rowNumber": 389,
+   "Year": 1995,
+   "Position": "6",
+   "Team": "Jordan Peugeot",
+   "Points": 21
+ },
+ {
+   "rowNumber": 390,
+   "Year": 1995,
+   "Position": "7",
+   "Team": "Sauber Ford",
+   "Points": 18
+ },
+ {
+   "rowNumber": 391,
+   "Year": 1995,
+   "Position": "8",
+   "Team": "Footwork Hart",
+   "Points": 5
+ },
+ {
+   "rowNumber": 392,
+   "Year": 1995,
+   "Position": "9",
+   "Team": "Tyrrell Yamaha",
+   "Points": 5
+ },
+ {
+   "rowNumber": 393,
+   "Year": 1995,
+   "Position": "10",
+   "Team": "Minardi Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 394,
+   "Year": 1996,
+   "Position": "1",
+   "Team": "Williams Renault",
+   "Points": 175
+ },
+ {
+   "rowNumber": 395,
+   "Year": 1996,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 70
+ },
+ {
+   "rowNumber": 396,
+   "Year": 1996,
+   "Position": "3",
+   "Team": "Benetton Renault",
+   "Points": 68
+ },
+ {
+   "rowNumber": 397,
+   "Year": 1996,
+   "Position": "4",
+   "Team": "McLaren Mercedes",
+   "Points": 49
+ },
+ {
+   "rowNumber": 398,
+   "Year": 1996,
+   "Position": "5",
+   "Team": "Jordan Peugeot",
+   "Points": 22
+ },
+ {
+   "rowNumber": 399,
+   "Year": 1996,
+   "Position": "6",
+   "Team": "Ligier Mugen Honda",
+   "Points": 15
+ },
+ {
+   "rowNumber": 400,
+   "Year": 1996,
+   "Position": "7",
+   "Team": "Sauber Ford",
+   "Points": 11
+ },
+ {
+   "rowNumber": 401,
+   "Year": 1996,
+   "Position": "8",
+   "Team": "Tyrrell Yamaha",
+   "Points": 5
+ },
+ {
+   "rowNumber": 402,
+   "Year": 1996,
+   "Position": "9",
+   "Team": "Footwork Hart",
+   "Points": 1
+ },
+ {
+   "rowNumber": 403,
+   "Year": 1997,
+   "Position": "1",
+   "Team": "Williams Renault",
+   "Points": 123
+ },
+ {
+   "rowNumber": 404,
+   "Year": 1997,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 102
+ },
+ {
+   "rowNumber": 405,
+   "Year": 1997,
+   "Position": "3",
+   "Team": "Benetton Renault",
+   "Points": 67
+ },
+ {
+   "rowNumber": 406,
+   "Year": 1997,
+   "Position": "4",
+   "Team": "McLaren Mercedes",
+   "Points": 63
+ },
+ {
+   "rowNumber": 407,
+   "Year": 1997,
+   "Position": "5",
+   "Team": "Jordan Peugeot",
+   "Points": 33
+ },
+ {
+   "rowNumber": 408,
+   "Year": 1997,
+   "Position": "6",
+   "Team": "Prost Mugen Honda",
+   "Points": 21
+ },
+ {
+   "rowNumber": 409,
+   "Year": 1997,
+   "Position": "7",
+   "Team": "Sauber Petronas",
+   "Points": 16
+ },
+ {
+   "rowNumber": 410,
+   "Year": 1997,
+   "Position": "8",
+   "Team": "Arrows Yamaha",
+   "Points": 9
+ },
+ {
+   "rowNumber": 411,
+   "Year": 1997,
+   "Position": "9",
+   "Team": "Stewart Ford",
+   "Points": 6
+ },
+ {
+   "rowNumber": 412,
+   "Year": 1997,
+   "Position": "10",
+   "Team": "Tyrrell Ford",
+   "Points": 2
+ },
+ {
+   "rowNumber": 413,
+   "Year": 1998,
+   "Position": "1",
+   "Team": "McLaren Mercedes",
+   "Points": 156
+ },
+ {
+   "rowNumber": 414,
+   "Year": 1998,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 133
+ },
+ {
+   "rowNumber": 415,
+   "Year": 1998,
+   "Position": "3",
+   "Team": "Williams Mecachrome",
+   "Points": 38
+ },
+ {
+   "rowNumber": 416,
+   "Year": 1998,
+   "Position": "4",
+   "Team": "Jordan Mugen Honda",
+   "Points": 34
+ },
+ {
+   "rowNumber": 417,
+   "Year": 1998,
+   "Position": "5",
+   "Team": "Benetton Playlife",
+   "Points": 33
+ },
+ {
+   "rowNumber": 418,
+   "Year": 1998,
+   "Position": "6",
+   "Team": "Sauber Petronas",
+   "Points": 10
+ },
+ {
+   "rowNumber": 419,
+   "Year": 1998,
+   "Position": "7",
+   "Team": "Arrows",
+   "Points": 6
+ },
+ {
+   "rowNumber": 420,
+   "Year": 1998,
+   "Position": "8",
+   "Team": "Stewart Ford",
+   "Points": 5
+ },
+ {
+   "rowNumber": 421,
+   "Year": 1998,
+   "Position": "9",
+   "Team": "Prost Peugeot",
+   "Points": 1
+ },
+ {
+   "rowNumber": 422,
+   "Year": 1999,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 128
+ },
+ {
+   "rowNumber": 423,
+   "Year": 1999,
+   "Position": "2",
+   "Team": "McLaren Mercedes",
+   "Points": 124
+ },
+ {
+   "rowNumber": 424,
+   "Year": 1999,
+   "Position": "3",
+   "Team": "Jordan Mugen Honda",
+   "Points": 61
+ },
+ {
+   "rowNumber": 425,
+   "Year": 1999,
+   "Position": "4",
+   "Team": "Stewart Ford",
+   "Points": 36
+ },
+ {
+   "rowNumber": 426,
+   "Year": 1999,
+   "Position": "5",
+   "Team": "Williams Supertec",
+   "Points": 35
+ },
+ {
+   "rowNumber": 427,
+   "Year": 1999,
+   "Position": "6",
+   "Team": "Benetton Playlife",
+   "Points": 16
+ },
+ {
+   "rowNumber": 428,
+   "Year": 1999,
+   "Position": "7",
+   "Team": "Prost Peugeot",
+   "Points": 9
+ },
+ {
+   "rowNumber": 429,
+   "Year": 1999,
+   "Position": "8",
+   "Team": "Sauber Petronas",
+   "Points": 5
+ },
+ {
+   "rowNumber": 430,
+   "Year": 1999,
+   "Position": "9",
+   "Team": "Minardi Ford",
+   "Points": 1
+ },
+ {
+   "rowNumber": 431,
+   "Year": 1999,
+   "Position": "10",
+   "Team": "Arrows",
+   "Points": 1
+ },
+ {
+   "rowNumber": 432,
+   "Year": 2000,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 170
+ },
+ {
+   "rowNumber": 433,
+   "Year": 2000,
+   "Position": "2",
+   "Team": "McLaren Mercedes",
+   "Points": 152
+ },
+ {
+   "rowNumber": 434,
+   "Year": 2000,
+   "Position": "3",
+   "Team": "Williams BMW",
+   "Points": 36
+ },
+ {
+   "rowNumber": 435,
+   "Year": 2000,
+   "Position": "4",
+   "Team": "Benetton Playlife",
+   "Points": 20
+ },
+ {
+   "rowNumber": 436,
+   "Year": 2000,
+   "Position": "5",
+   "Team": "BAR Honda",
+   "Points": 20
+ },
+ {
+   "rowNumber": 437,
+   "Year": 2000,
+   "Position": "6",
+   "Team": "Jordan Mugen Honda",
+   "Points": 17
+ },
+ {
+   "rowNumber": 438,
+   "Year": 2000,
+   "Position": "7",
+   "Team": "Arrows Supertec",
+   "Points": 7
+ },
+ {
+   "rowNumber": 439,
+   "Year": 2000,
+   "Position": "8",
+   "Team": "Sauber Petronas",
+   "Points": 6
+ },
+ {
+   "rowNumber": 440,
+   "Year": 2000,
+   "Position": "9",
+   "Team": "Jaguar Cosworth",
+   "Points": 4
+ },
+ {
+   "rowNumber": 441,
+   "Year": 2001,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 179
+ },
+ {
+   "rowNumber": 442,
+   "Year": 2001,
+   "Position": "2",
+   "Team": "McLaren Mercedes",
+   "Points": 102
+ },
+ {
+   "rowNumber": 443,
+   "Year": 2001,
+   "Position": "3",
+   "Team": "Williams BMW",
+   "Points": 80
+ },
+ {
+   "rowNumber": 444,
+   "Year": 2001,
+   "Position": "4",
+   "Team": "Sauber Petronas",
+   "Points": 21
+ },
+ {
+   "rowNumber": 445,
+   "Year": 2001,
+   "Position": "5",
+   "Team": "Jordan Honda",
+   "Points": 19
+ },
+ {
+   "rowNumber": 446,
+   "Year": 2001,
+   "Position": "6",
+   "Team": "BAR Honda",
+   "Points": 17
+ },
+ {
+   "rowNumber": 447,
+   "Year": 2001,
+   "Position": "7",
+   "Team": "Benetton Renault",
+   "Points": 10
+ },
+ {
+   "rowNumber": 448,
+   "Year": 2001,
+   "Position": "8",
+   "Team": "Jaguar Cosworth",
+   "Points": 9
+ },
+ {
+   "rowNumber": 449,
+   "Year": 2001,
+   "Position": "9",
+   "Team": "Prost Acer",
+   "Points": 4
+ },
+ {
+   "rowNumber": 450,
+   "Year": 2001,
+   "Position": "10",
+   "Team": "Arrows Asiatech",
+   "Points": 1
+ },
+ {
+   "rowNumber": 451,
+   "Year": 2002,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 221
+ },
+ {
+   "rowNumber": 452,
+   "Year": 2002,
+   "Position": "2",
+   "Team": "Williams BMW",
+   "Points": 92
+ },
+ {
+   "rowNumber": 453,
+   "Year": 2002,
+   "Position": "3",
+   "Team": "McLaren Mercedes",
+   "Points": 65
+ },
+ {
+   "rowNumber": 454,
+   "Year": 2002,
+   "Position": "4",
+   "Team": "Renault",
+   "Points": 23
+ },
+ {
+   "rowNumber": 455,
+   "Year": 2002,
+   "Position": "5",
+   "Team": "Sauber Petronas",
+   "Points": 11
+ },
+ {
+   "rowNumber": 456,
+   "Year": 2002,
+   "Position": "6",
+   "Team": "Jordan Honda",
+   "Points": 9
+ },
+ {
+   "rowNumber": 457,
+   "Year": 2002,
+   "Position": "7",
+   "Team": "Jaguar Cosworth",
+   "Points": 8
+ },
+ {
+   "rowNumber": 458,
+   "Year": 2002,
+   "Position": "8",
+   "Team": "BAR Honda",
+   "Points": 7
+ },
+ {
+   "rowNumber": 459,
+   "Year": 2002,
+   "Position": "9",
+   "Team": "Minardi Asiatech",
+   "Points": 2
+ },
+ {
+   "rowNumber": 460,
+   "Year": 2002,
+   "Position": "10",
+   "Team": "Toyota",
+   "Points": 2
+ },
+ {
+   "rowNumber": 461,
+   "Year": 2002,
+   "Position": "11",
+   "Team": "Arrows Cosworth",
+   "Points": 2
+ },
+ {
+   "rowNumber": 462,
+   "Year": 2003,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 158
+ },
+ {
+   "rowNumber": 463,
+   "Year": 2003,
+   "Position": "2",
+   "Team": "Williams BMW",
+   "Points": 144
+ },
+ {
+   "rowNumber": 464,
+   "Year": 2003,
+   "Position": "3",
+   "Team": "McLaren Mercedes",
+   "Points": 142
+ },
+ {
+   "rowNumber": 465,
+   "Year": 2003,
+   "Position": "4",
+   "Team": "Renault",
+   "Points": 88
+ },
+ {
+   "rowNumber": 466,
+   "Year": 2003,
+   "Position": "5",
+   "Team": "BAR Honda",
+   "Points": 26
+ },
+ {
+   "rowNumber": 467,
+   "Year": 2003,
+   "Position": "6",
+   "Team": "Sauber Petronas",
+   "Points": 19
+ },
+ {
+   "rowNumber": 468,
+   "Year": 2003,
+   "Position": "7",
+   "Team": "Jaguar Cosworth",
+   "Points": 18
+ },
+ {
+   "rowNumber": 469,
+   "Year": 2003,
+   "Position": "8",
+   "Team": "Toyota",
+   "Points": 16
+ },
+ {
+   "rowNumber": 470,
+   "Year": 2003,
+   "Position": "9",
+   "Team": "Jordan Ford",
+   "Points": 13
+ },
+ {
+   "rowNumber": 471,
+   "Year": 2003,
+   "Position": "10",
+   "Team": "Minardi Cosworth",
+   "Points": 0
+ },
+ {
+   "rowNumber": 472,
+   "Year": 2004,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 262
+ },
+ {
+   "rowNumber": 473,
+   "Year": 2004,
+   "Position": "2",
+   "Team": "BAR Honda",
+   "Points": 119
+ },
+ {
+   "rowNumber": 474,
+   "Year": 2004,
+   "Position": "3",
+   "Team": "Renault",
+   "Points": 105
+ },
+ {
+   "rowNumber": 475,
+   "Year": 2004,
+   "Position": "4",
+   "Team": "Williams BMW",
+   "Points": 88
+ },
+ {
+   "rowNumber": 476,
+   "Year": 2004,
+   "Position": "5",
+   "Team": "McLaren Mercedes",
+   "Points": 69
+ },
+ {
+   "rowNumber": 477,
+   "Year": 2004,
+   "Position": "6",
+   "Team": "Sauber Petronas",
+   "Points": 34
+ },
+ {
+   "rowNumber": 478,
+   "Year": 2004,
+   "Position": "7",
+   "Team": "Jaguar Cosworth",
+   "Points": 10
+ },
+ {
+   "rowNumber": 479,
+   "Year": 2004,
+   "Position": "8",
+   "Team": "Toyota",
+   "Points": 9
+ },
+ {
+   "rowNumber": 480,
+   "Year": 2004,
+   "Position": "9",
+   "Team": "Jordan Ford",
+   "Points": 5
+ },
+ {
+   "rowNumber": 481,
+   "Year": 2004,
+   "Position": "10",
+   "Team": "Minardi Cosworth",
+   "Points": 1
+ },
+ {
+   "rowNumber": 482,
+   "Year": 2005,
+   "Position": "1",
+   "Team": "Renault",
+   "Points": 191
+ },
+ {
+   "rowNumber": 483,
+   "Year": 2005,
+   "Position": "2",
+   "Team": "McLaren Mercedes",
+   "Points": 182
+ },
+ {
+   "rowNumber": 484,
+   "Year": 2005,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 100
+ },
+ {
+   "rowNumber": 485,
+   "Year": 2005,
+   "Position": "4",
+   "Team": "Toyota",
+   "Points": 88
+ },
+ {
+   "rowNumber": 486,
+   "Year": 2005,
+   "Position": "5",
+   "Team": "Williams BMW",
+   "Points": 66
+ },
+ {
+   "rowNumber": 487,
+   "Year": 2005,
+   "Position": "6",
+   "Team": "BAR Honda",
+   "Points": 38
+ },
+ {
+   "rowNumber": 488,
+   "Year": 2005,
+   "Position": "7",
+   "Team": "RBR Cosworth",
+   "Points": 34
+ },
+ {
+   "rowNumber": 489,
+   "Year": 2005,
+   "Position": "8",
+   "Team": "Sauber Petronas",
+   "Points": 20
+ },
+ {
+   "rowNumber": 490,
+   "Year": 2005,
+   "Position": "9",
+   "Team": "Jordan Toyota",
+   "Points": 12
+ },
+ {
+   "rowNumber": 491,
+   "Year": 2005,
+   "Position": "10",
+   "Team": "Minardi Cosworth",
+   "Points": 7
+ },
+ {
+   "rowNumber": 492,
+   "Year": 2006,
+   "Position": "1",
+   "Team": "Renault",
+   "Points": 206
+ },
+ {
+   "rowNumber": 493,
+   "Year": 2006,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 201
+ },
+ {
+   "rowNumber": 494,
+   "Year": 2006,
+   "Position": "3",
+   "Team": "McLaren Mercedes",
+   "Points": 110
+ },
+ {
+   "rowNumber": 495,
+   "Year": 2006,
+   "Position": "4",
+   "Team": "Honda",
+   "Points": 86
+ },
+ {
+   "rowNumber": 496,
+   "Year": 2006,
+   "Position": "5",
+   "Team": "Sauber BMW",
+   "Points": 36
+ },
+ {
+   "rowNumber": 497,
+   "Year": 2006,
+   "Position": "6",
+   "Team": "Toyota",
+   "Points": 35
+ },
+ {
+   "rowNumber": 498,
+   "Year": 2006,
+   "Position": "7",
+   "Team": "RBR Ferrari",
+   "Points": 16
+ },
+ {
+   "rowNumber": 499,
+   "Year": 2006,
+   "Position": "8",
+   "Team": "Williams Cosworth",
+   "Points": 11
+ },
+ {
+   "rowNumber": 500,
+   "Year": 2006,
+   "Position": "9",
+   "Team": "STR Cosworth",
+   "Points": 1
+ },
+ {
+   "rowNumber": 501,
+   "Year": 2006,
+   "Position": "10",
+   "Team": "MF1 Toyota",
+   "Points": 0
+ },
+ {
+   "rowNumber": 502,
+   "Year": 2006,
+   "Position": "11",
+   "Team": "Super Aguri Honda",
+   "Points": 0
+ },
+ {
+   "rowNumber": 503,
+   "Year": 2007,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 204
+ },
+ {
+   "rowNumber": 504,
+   "Year": 2007,
+   "Position": "2",
+   "Team": "Sauber BMW",
+   "Points": 101
+ },
+ {
+   "rowNumber": 505,
+   "Year": 2007,
+   "Position": "3",
+   "Team": "Renault",
+   "Points": 51
+ },
+ {
+   "rowNumber": 506,
+   "Year": 2007,
+   "Position": "4",
+   "Team": "Williams Toyota",
+   "Points": 33
+ },
+ {
+   "rowNumber": 507,
+   "Year": 2007,
+   "Position": "5",
+   "Team": "Red Bull Renault",
+   "Points": 24
+ },
+ {
+   "rowNumber": 508,
+   "Year": 2007,
+   "Position": "6",
+   "Team": "Toyota",
+   "Points": 13
+ },
+ {
+   "rowNumber": 509,
+   "Year": 2007,
+   "Position": "7",
+   "Team": "STR Ferrari",
+   "Points": 8
+ },
+ {
+   "rowNumber": 510,
+   "Year": 2007,
+   "Position": "8",
+   "Team": "Honda",
+   "Points": 6
+ },
+ {
+   "rowNumber": 511,
+   "Year": 2007,
+   "Position": "9",
+   "Team": "Super Aguri Honda",
+   "Points": 4
+ },
+ {
+   "rowNumber": 512,
+   "Year": 2007,
+   "Position": "10",
+   "Team": "Spyker Ferrari",
+   "Points": 1
+ },
+ {
+   "rowNumber": 513,
+   "Year": 2007,
+   "Position": "EX",
+   "Team": "McLaren Mercedes",
+   "Points": 0
+ },
+ {
+   "rowNumber": 514,
+   "Year": 2008,
+   "Position": "1",
+   "Team": "Ferrari",
+   "Points": 172
+ },
+ {
+   "rowNumber": 515,
+   "Year": 2008,
+   "Position": "2",
+   "Team": "McLaren Mercedes",
+   "Points": 151
+ },
+ {
+   "rowNumber": 516,
+   "Year": 2008,
+   "Position": "3",
+   "Team": "Sauber BMW",
+   "Points": 135
+ },
+ {
+   "rowNumber": 517,
+   "Year": 2008,
+   "Position": "4",
+   "Team": "Renault",
+   "Points": 80
+ },
+ {
+   "rowNumber": 518,
+   "Year": 2008,
+   "Position": "5",
+   "Team": "Toyota",
+   "Points": 56
+ },
+ {
+   "rowNumber": 519,
+   "Year": 2008,
+   "Position": "6",
+   "Team": "STR Ferrari",
+   "Points": 39
+ },
+ {
+   "rowNumber": 520,
+   "Year": 2008,
+   "Position": "7",
+   "Team": "Red Bull Renault",
+   "Points": 29
+ },
+ {
+   "rowNumber": 521,
+   "Year": 2008,
+   "Position": "8",
+   "Team": "Williams Toyota",
+   "Points": 26
+ },
+ {
+   "rowNumber": 522,
+   "Year": 2008,
+   "Position": "9",
+   "Team": "Honda",
+   "Points": 14
+ },
+ {
+   "rowNumber": 523,
+   "Year": 2008,
+   "Position": "10",
+   "Team": "Force India Ferrari",
+   "Points": 0
+ },
+ {
+   "rowNumber": 524,
+   "Year": 2008,
+   "Position": "11",
+   "Team": "Super Aguri Honda",
+   "Points": 0
+ },
+ {
+   "rowNumber": 525,
+   "Year": 2009,
+   "Position": "1",
+   "Team": "Brawn Mercedes",
+   "Points": 172
+ },
+ {
+   "rowNumber": 526,
+   "Year": 2009,
+   "Position": "2",
+   "Team": "RBR Renault",
+   "Points": 153
+ },
+ {
+   "rowNumber": 527,
+   "Year": 2009,
+   "Position": "3",
+   "Team": "McLaren Mercedes",
+   "Points": 71
+ },
+ {
+   "rowNumber": 528,
+   "Year": 2009,
+   "Position": "4",
+   "Team": "Ferrari",
+   "Points": 70
+ },
+ {
+   "rowNumber": 529,
+   "Year": 2009,
+   "Position": "5",
+   "Team": "Toyota",
+   "Points": 59
+ },
+ {
+   "rowNumber": 530,
+   "Year": 2009,
+   "Position": "6",
+   "Team": "Sauber BMW",
+   "Points": 36
+ },
+ {
+   "rowNumber": 531,
+   "Year": 2009,
+   "Position": "7",
+   "Team": "Williams Toyota",
+   "Points": 34
+ },
+ {
+   "rowNumber": 532,
+   "Year": 2009,
+   "Position": "8",
+   "Team": "Renault",
+   "Points": 26
+ },
+ {
+   "rowNumber": 533,
+   "Year": 2009,
+   "Position": "9",
+   "Team": "Force India Mercedes",
+   "Points": 13
+ },
+ {
+   "rowNumber": 534,
+   "Year": 2009,
+   "Position": "10",
+   "Team": "STR Ferrari",
+   "Points": 8
+ },
+ {
+   "rowNumber": 535,
+   "Year": 2010,
+   "Position": "1",
+   "Team": "RBR Renault",
+   "Points": 498
+ },
+ {
+   "rowNumber": 536,
+   "Year": 2010,
+   "Position": "2",
+   "Team": "McLaren Mercedes",
+   "Points": 454
+ },
+ {
+   "rowNumber": 537,
+   "Year": 2010,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 396
+ },
+ {
+   "rowNumber": 538,
+   "Year": 2010,
+   "Position": "4",
+   "Team": "Mercedes",
+   "Points": 214
+ },
+ {
+   "rowNumber": 539,
+   "Year": 2010,
+   "Position": "5",
+   "Team": "Renault",
+   "Points": 163
+ },
+ {
+   "rowNumber": 540,
+   "Year": 2010,
+   "Position": "6",
+   "Team": "Williams Cosworth",
+   "Points": 69
+ },
+ {
+   "rowNumber": 541,
+   "Year": 2010,
+   "Position": "7",
+   "Team": "Force India Mercedes",
+   "Points": 68
+ },
+ {
+   "rowNumber": 542,
+   "Year": 2010,
+   "Position": "8",
+   "Team": "Sauber Ferrari",
+   "Points": 44
+ },
+ {
+   "rowNumber": 543,
+   "Year": 2010,
+   "Position": "9",
+   "Team": "STR Ferrari",
+   "Points": 13
+ },
+ {
+   "rowNumber": 544,
+   "Year": 2010,
+   "Position": "10",
+   "Team": "Lotus Cosworth",
+   "Points": 0
+ },
+ {
+   "rowNumber": 545,
+   "Year": 2010,
+   "Position": "11",
+   "Team": "HRT Cosworth",
+   "Points": 0
+ },
+ {
+   "rowNumber": 546,
+   "Year": 2010,
+   "Position": "12",
+   "Team": "Virgin Cosworth",
+   "Points": 0
+ },
+ {
+   "rowNumber": 547,
+   "Year": 2011,
+   "Position": "1",
+   "Team": "Red Bull Racing Renault",
+   "Points": 650
+ },
+ {
+   "rowNumber": 548,
+   "Year": 2011,
+   "Position": "2",
+   "Team": "McLaren Mercedes",
+   "Points": 497
+ },
+ {
+   "rowNumber": 549,
+   "Year": 2011,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 375
+ },
+ {
+   "rowNumber": 550,
+   "Year": 2011,
+   "Position": "4",
+   "Team": "Mercedes",
+   "Points": 165
+ },
+ {
+   "rowNumber": 551,
+   "Year": 2011,
+   "Position": "5",
+   "Team": "Renault",
+   "Points": 73
+ },
+ {
+   "rowNumber": 552,
+   "Year": 2011,
+   "Position": "6",
+   "Team": "Force India Mercedes",
+   "Points": 69
+ },
+ {
+   "rowNumber": 553,
+   "Year": 2011,
+   "Position": "7",
+   "Team": "Sauber Ferrari",
+   "Points": 44
+ },
+ {
+   "rowNumber": 554,
+   "Year": 2011,
+   "Position": "8",
+   "Team": "STR Ferrari",
+   "Points": 41
+ },
+ {
+   "rowNumber": 555,
+   "Year": 2011,
+   "Position": "9",
+   "Team": "Williams Cosworth",
+   "Points": 5
+ },
+ {
+   "rowNumber": 556,
+   "Year": 2011,
+   "Position": "10",
+   "Team": "Lotus Renault",
+   "Points": 0
+ },
+ {
+   "rowNumber": 557,
+   "Year": 2011,
+   "Position": "11",
+   "Team": "HRT Cosworth",
+   "Points": 0
+ },
+ {
+   "rowNumber": 558,
+   "Year": 2011,
+   "Position": "12",
+   "Team": "Virgin Cosworth",
+   "Points": 0
+ },
+ {
+   "rowNumber": 559,
+   "Year": 2012,
+   "Position": "1",
+   "Team": "Red Bull Racing Renault",
+   "Points": 460
+ },
+ {
+   "rowNumber": 560,
+   "Year": 2012,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 400
+ },
+ {
+   "rowNumber": 561,
+   "Year": 2012,
+   "Position": "3",
+   "Team": "McLaren Mercedes",
+   "Points": 378
+ },
+ {
+   "rowNumber": 562,
+   "Year": 2012,
+   "Position": "4",
+   "Team": "Lotus Renault",
+   "Points": 303
+ },
+ {
+   "rowNumber": 563,
+   "Year": 2012,
+   "Position": "5",
+   "Team": "Mercedes",
+   "Points": 142
+ },
+ {
+   "rowNumber": 564,
+   "Year": 2012,
+   "Position": "6",
+   "Team": "Sauber Ferrari",
+   "Points": 126
+ },
+ {
+   "rowNumber": 565,
+   "Year": 2012,
+   "Position": "7",
+   "Team": "Force India Mercedes",
+   "Points": 109
+ },
+ {
+   "rowNumber": 566,
+   "Year": 2012,
+   "Position": "8",
+   "Team": "Williams Renault",
+   "Points": 76
+ },
+ {
+   "rowNumber": 567,
+   "Year": 2012,
+   "Position": "9",
+   "Team": "STR Ferrari",
+   "Points": 26
+ },
+ {
+   "rowNumber": 568,
+   "Year": 2012,
+   "Position": "10",
+   "Team": "Caterham Renault",
+   "Points": 0
+ },
+ {
+   "rowNumber": 569,
+   "Year": 2012,
+   "Position": "11",
+   "Team": "Marussia Cosworth",
+   "Points": 0
+ },
+ {
+   "rowNumber": 570,
+   "Year": 2012,
+   "Position": "12",
+   "Team": "HRT Cosworth",
+   "Points": 0
+ },
+ {
+   "rowNumber": 571,
+   "Year": 2013,
+   "Position": "1",
+   "Team": "Red Bull Racing Renault",
+   "Points": 596
+ },
+ {
+   "rowNumber": 572,
+   "Year": 2013,
+   "Position": "2",
+   "Team": "Mercedes",
+   "Points": 360
+ },
+ {
+   "rowNumber": 573,
+   "Year": 2013,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 354
+ },
+ {
+   "rowNumber": 574,
+   "Year": 2013,
+   "Position": "4",
+   "Team": "Lotus Renault",
+   "Points": 315
+ },
+ {
+   "rowNumber": 575,
+   "Year": 2013,
+   "Position": "5",
+   "Team": "McLaren Mercedes",
+   "Points": 122
+ },
+ {
+   "rowNumber": 576,
+   "Year": 2013,
+   "Position": "6",
+   "Team": "Force India Mercedes",
+   "Points": 77
+ },
+ {
+   "rowNumber": 577,
+   "Year": 2013,
+   "Position": "7",
+   "Team": "Sauber Ferrari",
+   "Points": 57
+ },
+ {
+   "rowNumber": 578,
+   "Year": 2013,
+   "Position": "8",
+   "Team": "STR Ferrari",
+   "Points": 33
+ },
+ {
+   "rowNumber": 579,
+   "Year": 2013,
+   "Position": "9",
+   "Team": "Williams Renault",
+   "Points": 5
+ },
+ {
+   "rowNumber": 580,
+   "Year": 2013,
+   "Position": "10",
+   "Team": "Marussia Cosworth",
+   "Points": 0
+ },
+ {
+   "rowNumber": 581,
+   "Year": 2013,
+   "Position": "11",
+   "Team": "Caterham Renault",
+   "Points": 0
+ },
+ {
+   "rowNumber": 582,
+   "Year": 2014,
+   "Position": "1",
+   "Team": "Mercedes",
+   "Points": 701
+ },
+ {
+   "rowNumber": 583,
+   "Year": 2014,
+   "Position": "2",
+   "Team": "Red Bull Racing Renault",
+   "Points": 405
+ },
+ {
+   "rowNumber": 584,
+   "Year": 2014,
+   "Position": "3",
+   "Team": "Williams Mercedes",
+   "Points": 320
+ },
+ {
+   "rowNumber": 585,
+   "Year": 2014,
+   "Position": "4",
+   "Team": "Ferrari",
+   "Points": 216
+ },
+ {
+   "rowNumber": 586,
+   "Year": 2014,
+   "Position": "5",
+   "Team": "McLaren Mercedes",
+   "Points": 181
+ },
+ {
+   "rowNumber": 587,
+   "Year": 2014,
+   "Position": "6",
+   "Team": "Force India Mercedes",
+   "Points": 155
+ },
+ {
+   "rowNumber": 588,
+   "Year": 2014,
+   "Position": "7",
+   "Team": "STR Renault",
+   "Points": 30
+ },
+ {
+   "rowNumber": 589,
+   "Year": 2014,
+   "Position": "8",
+   "Team": "Lotus Renault",
+   "Points": 10
+ },
+ {
+   "rowNumber": 590,
+   "Year": 2014,
+   "Position": "9",
+   "Team": "Marussia Ferrari",
+   "Points": 2
+ },
+ {
+   "rowNumber": 591,
+   "Year": 2014,
+   "Position": "10",
+   "Team": "Sauber Ferrari",
+   "Points": 0
+ },
+ {
+   "rowNumber": 592,
+   "Year": 2014,
+   "Position": "11",
+   "Team": "Caterham Renault",
+   "Points": 0
+ },
+ {
+   "rowNumber": 593,
+   "Year": 2015,
+   "Position": "1",
+   "Team": "Mercedes",
+   "Points": 703
+ },
+ {
+   "rowNumber": 594,
+   "Year": 2015,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 428
+ },
+ {
+   "rowNumber": 595,
+   "Year": 2015,
+   "Position": "3",
+   "Team": "Williams Mercedes",
+   "Points": 257
+ },
+ {
+   "rowNumber": 596,
+   "Year": 2015,
+   "Position": "4",
+   "Team": "Red Bull Racing Renault",
+   "Points": 187
+ },
+ {
+   "rowNumber": 597,
+   "Year": 2015,
+   "Position": "5",
+   "Team": "Force India Mercedes",
+   "Points": 136
+ },
+ {
+   "rowNumber": 598,
+   "Year": 2015,
+   "Position": "6",
+   "Team": "Lotus Mercedes",
+   "Points": 78
+ },
+ {
+   "rowNumber": 599,
+   "Year": 2015,
+   "Position": "7",
+   "Team": "STR Renault",
+   "Points": 67
+ },
+ {
+   "rowNumber": 600,
+   "Year": 2015,
+   "Position": "8",
+   "Team": "Sauber Ferrari",
+   "Points": 36
+ },
+ {
+   "rowNumber": 601,
+   "Year": 2015,
+   "Position": "9",
+   "Team": "McLaren Honda",
+   "Points": 27
+ },
+ {
+   "rowNumber": 602,
+   "Year": 2015,
+   "Position": "10",
+   "Team": "Marussia Ferrari",
+   "Points": 0
+ },
+ {
+   "rowNumber": 603,
+   "Year": 2016,
+   "Position": "1",
+   "Team": "Mercedes",
+   "Points": 765
+ },
+ {
+   "rowNumber": 604,
+   "Year": 2016,
+   "Position": "2",
+   "Team": "Red Bull Racing TAG Heuer",
+   "Points": 468
+ },
+ {
+   "rowNumber": 605,
+   "Year": 2016,
+   "Position": "3",
+   "Team": "Ferrari",
+   "Points": 398
+ },
+ {
+   "rowNumber": 606,
+   "Year": 2016,
+   "Position": "4",
+   "Team": "Force India Mercedes",
+   "Points": 173
+ },
+ {
+   "rowNumber": 607,
+   "Year": 2016,
+   "Position": "5",
+   "Team": "Williams Mercedes",
+   "Points": 138
+ },
+ {
+   "rowNumber": 608,
+   "Year": 2016,
+   "Position": "6",
+   "Team": "McLaren Honda",
+   "Points": 76
+ },
+ {
+   "rowNumber": 609,
+   "Year": 2016,
+   "Position": "7",
+   "Team": "Toro Rosso Ferrari",
+   "Points": 63
+ },
+ {
+   "rowNumber": 610,
+   "Year": 2016,
+   "Position": "8",
+   "Team": "Haas Ferrari",
+   "Points": 29
+ },
+ {
+   "rowNumber": 611,
+   "Year": 2016,
+   "Position": "9",
+   "Team": "Renault",
+   "Points": 8
+ },
+ {
+   "rowNumber": 612,
+   "Year": 2016,
+   "Position": "10",
+   "Team": "Sauber Ferrari",
+   "Points": 2
+ },
+ {
+   "rowNumber": 613,
+   "Year": 2016,
+   "Position": "11",
+   "Team": "MRT Mercedes",
+   "Points": 1
+ },
+ {
+   "rowNumber": 614,
+   "Year": 2017,
+   "Position": "1",
+   "Team": "Mercedes",
+   "Points": 668
+ },
+ {
+   "rowNumber": 615,
+   "Year": 2017,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 522
+ },
+ {
+   "rowNumber": 616,
+   "Year": 2017,
+   "Position": "3",
+   "Team": "Red Bull Racing TAG Heuer",
+   "Points": 368
+ },
+ {
+   "rowNumber": 617,
+   "Year": 2017,
+   "Position": "4",
+   "Team": "Force India Mercedes",
+   "Points": 187
+ },
+ {
+   "rowNumber": 618,
+   "Year": 2017,
+   "Position": "5",
+   "Team": "Williams Mercedes",
+   "Points": 83
+ },
+ {
+   "rowNumber": 619,
+   "Year": 2017,
+   "Position": "6",
+   "Team": "Renault",
+   "Points": 57
+ },
+ {
+   "rowNumber": 620,
+   "Year": 2017,
+   "Position": "7",
+   "Team": "Toro Rosso",
+   "Points": 53
+ },
+ {
+   "rowNumber": 621,
+   "Year": 2017,
+   "Position": "8",
+   "Team": "Haas Ferrari",
+   "Points": 47
+ },
+ {
+   "rowNumber": 622,
+   "Year": 2017,
+   "Position": "9",
+   "Team": "McLaren Honda",
+   "Points": 30
+ },
+ {
+   "rowNumber": 623,
+   "Year": 2017,
+   "Position": "10",
+   "Team": "Sauber Ferrari",
+   "Points": 5
+ },
+ {
+   "rowNumber": 624,
+   "Year": 2018,
+   "Position": "1",
+   "Team": "Mercedes",
+   "Points": 655
+ },
+ {
+   "rowNumber": 625,
+   "Year": 2018,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 571
+ },
+ {
+   "rowNumber": 626,
+   "Year": 2018,
+   "Position": "3",
+   "Team": "Red Bull Racing TAG Heuer",
+   "Points": 419
+ },
+ {
+   "rowNumber": 627,
+   "Year": 2018,
+   "Position": "4",
+   "Team": "Renault",
+   "Points": 122
+ },
+ {
+   "rowNumber": 628,
+   "Year": 2018,
+   "Position": "5",
+   "Team": "Haas Ferrari",
+   "Points": 93
+ },
+ {
+   "rowNumber": 629,
+   "Year": 2018,
+   "Position": "6",
+   "Team": "McLaren Renault",
+   "Points": 62
+ },
+ {
+   "rowNumber": 630,
+   "Year": 2018,
+   "Position": "7",
+   "Team": "Force India Mercedes",
+   "Points": 52
+ },
+ {
+   "rowNumber": 631,
+   "Year": 2018,
+   "Position": "8",
+   "Team": "Sauber Ferrari",
+   "Points": 48
+ },
+ {
+   "rowNumber": 632,
+   "Year": 2018,
+   "Position": "9",
+   "Team": "Scuderia Toro Rosso Honda",
+   "Points": 33
+ },
+ {
+   "rowNumber": 633,
+   "Year": 2018,
+   "Position": "10",
+   "Team": "Williams Mercedes",
+   "Points": 7
+ },
+ {
+   "rowNumber": 634,
+   "Year": 2018,
+   "Position": "EX",
+   "Team": "Force India Sahara",
+   "Points": 0
+ },
+ {
+   "rowNumber": 635,
+   "Year": 2019,
+   "Position": "1",
+   "Team": "Mercedes",
+   "Points": 739
+ },
+ {
+   "rowNumber": 636,
+   "Year": 2019,
+   "Position": "2",
+   "Team": "Ferrari",
+   "Points": 504
+ },
+ {
+   "rowNumber": 637,
+   "Year": 2019,
+   "Position": "3",
+   "Team": "Red Bull Racing Honda",
+   "Points": 417
+ },
+ {
+   "rowNumber": 638,
+   "Year": 2019,
+   "Position": "4",
+   "Team": "McLaren Renault",
+   "Points": 145
+ },
+ {
+   "rowNumber": 639,
+   "Year": 2019,
+   "Position": "5",
+   "Team": "Renault",
+   "Points": 91
+ },
+ {
+   "rowNumber": 640,
+   "Year": 2019,
+   "Position": "6",
+   "Team": "Scuderia Toro Rosso Honda",
+   "Points": 85
+ },
+ {
+   "rowNumber": 641,
+   "Year": 2019,
+   "Position": "7",
+   "Team": "Racing Point BWT Mercedes",
+   "Points": 73
+ },
+ {
+   "rowNumber": 642,
+   "Year": 2019,
+   "Position": "8",
+   "Team": "Alfa Romeo Racing Ferrari",
+   "Points": 57
+ },
+ {
+   "rowNumber": 643,
+   "Year": 2019,
+   "Position": "9",
+   "Team": "Haas Ferrari",
+   "Points": 28
+ },
+ {
+   "rowNumber": 644,
+   "Year": 2019,
+   "Position": "10",
+   "Team": "Williams Mercedes",
+   "Points": 1
+ },
+ {
+   "rowNumber": 645,
+   "Year": 2020,
+   "Position": "1",
+   "Team": "Mercedes",
+   "Points": 366
+ },
+ {
+   "rowNumber": 646,
+   "Year": 2020,
+   "Position": "2",
+   "Team": "Red Bull Racing Honda",
+   "Points": 192
+ },
+ {
+   "rowNumber": 647,
+   "Year": 2020,
+   "Position": "3",
+   "Team": "McLaren Renault",
+   "Points": 106
+ },
+ {
+   "rowNumber": 648,
+   "Year": 2020,
+   "Position": "4",
+   "Team": "Racing Point BWT Mercedes",
+   "Points": 104
+ },
+ {
+   "rowNumber": 649,
+   "Year": 2020,
+   "Position": "5",
+   "Team": "Renault",
+   "Points": 99
+ },
+ {
+   "rowNumber": 650,
+   "Year": 2020,
+   "Position": "6",
+   "Team": "Ferrari",
+   "Points": 74
+ },
+ {
+   "rowNumber": 651,
+   "Year": 2020,
+   "Position": "7",
+   "Team": "AlphaTauri Honda",
+   "Points": 59
+ },
+ {
+   "rowNumber": 652,
+   "Year": 2020,
+   "Position": "8",
+   "Team": "Alfa Romeo Racing Ferrari",
+   "Points": 4
+ },
+ {
+   "rowNumber": 653,
+   "Year": 2020,
+   "Position": "9",
+   "Team": "Haas Ferrari",
+   "Points": 1
+ },
+ {
+   "rowNumber": 654,
+   "Year": 2020,
+   "Position": "10",
+   "Team": "Williams Mercedes",
+   "Points": 0
+ }
+]
