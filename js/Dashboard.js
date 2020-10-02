@@ -1,26 +1,47 @@
-var drawLines = function (constructors, target, xScale, yScale) {
-    var lineGenerator = d3.line()
-        .x(function (race) 
-           {
-            return xScale(race.Year)
-            })
-        .y(function (race) 
-           {
-            return yScale(race.Points)
-            })
-        .curve(d3.curveCardinal)
+var groupByTeam = function (cars) {
+    var keys = [];
+    var dict = {};
 
-    var lines = d3.select("svg")
-        .select("#constructorGraph")
+
+    cars.forEach(function (car) {
+        if (dict[car.Team]) {
+            dict[car.Team].push(car);
+        } else {
+            dict[car.Team] = [car];
+            keys.push(car.Team);
+        }
+    })
+
+    var grouped = keys.map(function (key) {
+        return dict[key];
+    })
+
+    console.log("grouped", grouped);
+
+    return grouped;
+}
+
+var drawLines = function (constructors, target, xScale, yScale) {
+    var teams = groupByTeam(constructors)
+    var lineGenerator = d3.line()
+        .x(function (teamYear) {
+            return xScale(teamYear.Year)
+        })
+        .y(function (teamYear) {
+            return yScale(teamYear.Points)
+        })
+        //.curve(d3.curveCardinal)
+        
+    var lines = target
         .selectAll("g")
-        .data(constructors)
+        .data(teams)
         .enter()
         .append("g")
         .classed("line", true)
         .attr("fill", "none")
         .attr("stroke", "black")
         .attr("stroke-width", 10)
-        .on("mouseover", function (constructor) {
+        .on("mouseover", function (team) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
@@ -38,9 +59,9 @@ var drawLines = function (constructors, target, xScale, yScale) {
                 .classed("hidden", false)
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
-            
+
         })
-        .on("mouseout", function (constructor) {
+        .on("mouseout", function (team) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
@@ -54,50 +75,54 @@ var drawLines = function (constructors, target, xScale, yScale) {
 
 
     lines.append("path")
-        .datum(constructor)
+        .datum(function(team){
+        return team
+    })
         .attr("d", lineGenerator)
-    
+
+
+
+
     target
-    .selectAll("circle")
-    .data(constructors)
-    .enter()
-    .append("circle")
-    .attr("cx", function(race)
-         {
-        return xScale(race.Year)
-    })
-    .attr("cy", function(race)
-         {
-        return yScale(race.Points)
-    })
-    .attr("r", 2.5)
-    .on("mouseenter" ,function(race)
-      {
-        
-      var xPos = d3.event.pageX;
-      var yPos = d3.event.pageY;
-      
-        d3.select("#tooltip")
-        .classed("hidden",false)
-        .style("top",yPos+"px")
-        .style("left",xPos+"px")
-        
-        d3.select("#Team")
-        .text(constructor.Team)
-        
-        d3.select("#Year")
-        .text(constructor.Year)
-        
-        d3.select("Points")
-        .text(constructor.Points)
-        
-        
-      })//tool tip off
-    .on("mouseleave",function()
-    {
-        d3.select("#tooltip")    
-        .classed("hidden",true);
-    })
+        .selectAll("circle")
+        .data(constructors)
+        .enter()
+        .append("circle")
+        .attr("cx", function (race) {
+            return xScale(race.Year)
+        })
+        .attr("cy", function (race) {
+            return yScale(race.Points)
+        })
+        .attr("r", 2.5)
+        .on("mouseenter", function (race) {
+
+            var xPos = d3.event.pageX;
+            var yPos = d3.event.pageY;
+
+            d3.select("#tooltip")
+                .classed("hidden", false)
+                .style("top", yPos + "px")
+                .style("left", xPos + "px")
+
+            d3.select("#Team")
+                .text(constructor.Team)
+
+            d3.select("#Year")
+                .text(constructor.Year)
+
+            d3.select("Points")
+                .text(constructor.Points)
+
+
+        }) //tool tip off
+        .on("mouseleave", function () {
+            d3.select("#tooltip")
+                .classed("hidden", true);
+        })
+
+
+
 }
 
 
@@ -194,10 +219,10 @@ var initGraph = function (constructors) {
         .attr("transform",
             "translate(" + margins.left + "," +
             margins.top + ")");
-    
+
 
     var xScale = d3.scaleLinear()
-        .domain([1950, 2020])
+        .domain([1958, 2020])
         .range([0, graph.width])
 
     var yScale = d3.scaleLinear()
@@ -207,6 +232,7 @@ var initGraph = function (constructors) {
     drawAxes(graph, margins, xScale, yScale);
     drawLines(constructors, target, xScale, yScale);
     drawLabels(graph, margins);
+    groupByTeam(constructors)
 
 }
 
@@ -232,6 +258,3 @@ var setBanner = function (message) {
     d3.select("#constructorBanner")
         .text(message)
 }
-
-
-
