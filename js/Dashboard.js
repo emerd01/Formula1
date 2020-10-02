@@ -109,6 +109,7 @@ var drawAxes = function (graphDim, margins, xScale, yScale) {
 
     var xAxis = d3.axisBottom()
         .scale(xScale)
+        .tickFormat(d3.format("d"))
 
     var yAxis = d3.axisLeft()
         .scale(yScale)
