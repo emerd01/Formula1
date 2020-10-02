@@ -30,7 +30,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
         .y(function (teamYear) {
             return yScale(teamYear.Points)
         })
-        //.curve(d3.curveCardinal)
+        .curve(d3.curveCardinal)
         
     var lines = target
         .selectAll("g")
@@ -238,7 +238,7 @@ var initGraph = function (constructors) {
 
 
 
-var constructorPromise = d3.csv("/constructors.csv")
+var constructorPromise = d3.csv("../constructors.csv")
 
 var successFCN = function (constructors) {
     console.log("constructors", constructors)
