@@ -1,41 +1,15 @@
 var drawLines = function (constructors, target, xScale, yScale) {
     var lineGenerator = d3.line()
-        .x(function (race) {
-            return xScale(race.Year)
-        })
-        .y(function (race) {
-            return yScale(race.Points)
-        })
-        //.curve(d3.curveCardinal)
-   
-    /*
-    
-    d3.select("#constructorGraph")
-        .selectAll("circle")
-        .data(constructors)
-        .enter()
-        .append("circle")
-        .attr("cx", function (constructor) {
-            return xScale(constructor.points)
-            
-        })
-        
-        .attr("cy", function (contructor) {
-            return yScale(constructor.races)
-        })
-        .attr("r", 5)
-        */
-    /*
-    var lineGenerator = d3.line()
-        .x(function (score) {
-            return xScale(score.Year)
-        })
-        .y(function (score) {
-            return yScale(score.Points)
-        })
+        .x(function (race) 
+           {
+            return xScale(race.Points)
+            })
+        .y(function (race) 
+           {
+            return yScale(race.Year)
+            })
         .curve(d3.curveCardinal)
 
-    
     var lines = d3.select("svg")
         .select("#constructorGraph")
         .selectAll("g")
@@ -77,16 +51,48 @@ var drawLines = function (constructors, target, xScale, yScale) {
 
 
         })
-*/
+
 
     lines.append("path")
-        .datum(function (constructor) {
-            return constructor.points
-
-        })
+        .datum(constructor)
         .attr("d", lineGenerator)
-
-
+    
+    target
+    .selectAll("circle")
+    .data(constructors)
+    .enter()
+    .append("circle")
+    .attr("cx", function(race)
+         {
+        return xScale(race.Year)
+    })
+    .attr("cy", function(race)
+         {
+        return yScale(race.Points)
+    })
+    .attr("r", 2.5)
+    .on("mouseenter" ,function(race)
+      {
+        
+      var xPos = d3.event.pageX;
+      var yPos = d3.event.pageY;
+      
+        d3.select("#tooltip")
+        .classed("hidden",false)
+        .style("top",yPos+"px")
+        .style("left",xPos+"px")
+        
+        d3.select("#Team")
+        .text(constructor.Team);
+        
+        d3.select("#Year")
+        .text(constructor.Year);
+      })//tool tip off
+    .on("mouseleave",function()
+    {
+        d3.select("#tooltip")    
+        .classed("hidden",true);
+    })
 }
 
 
@@ -99,8 +105,7 @@ var makeTranslateString = function (x, y) {
 //graphDim is an object that describes the width and height of the graph area.
 //margins is an object that describes the space around the graph
 //xScale and yScale are the scales for the x and y scale.
-var drawAxes = function (graphDim, margins,
-    xScale, yScale) {
+var drawAxes = function (graphDim, margins, xScale, yScale) {
 
     var xAxis = d3.axisBottom()
         .scale(xScale)
@@ -201,7 +206,7 @@ var initGraph = function (constructors) {
 
 
 
-var racingPromise = d3.json("/constructors.json")
+var racingPromise = d3.csv("/constructors.csv")
 
 var successFCN = function (constructors) {
     console.log("constructors", constructors)

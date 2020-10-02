@@ -1,0 +1,44 @@
+#tooltip.hidden
+{
+    display:none;
+}
+
+#tooltip
+{
+    position:absolute;
+    width:300px;
+    height:auto;
+    padding:10px;
+    background-color:white;
+    border-radius:10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    pointer-events:none;
+}
+
+path
+{
+    stroke:gray;
+    fill:none;
+    stroke-width:3;
+}
+
+.selected path
+{
+    stroke:gold;
+    stroke-width:6;
+}
+
+#Year
+{
+    font-size: 30
+}
+
+#Team
+{
+    font-size: 30
+}
+
+.off
+{
+    opacity: .1
+}
