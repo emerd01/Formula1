@@ -2,11 +2,11 @@ var drawLines = function (constructors, target, xScale, yScale) {
     var lineGenerator = d3.line()
         .x(function (race) 
            {
-            return xScale(race.Points)
+            return xScale(race.Year)
             })
         .y(function (race) 
            {
-            return yScale(race.Year)
+            return yScale(race.Points)
             })
         .curve(d3.curveCardinal)
 
@@ -83,10 +83,15 @@ var drawLines = function (constructors, target, xScale, yScale) {
         .style("left",xPos+"px")
         
         d3.select("#Team")
-        .text(constructor.Team);
+        .text(constructor.Team)
         
         d3.select("#Year")
-        .text(constructor.Year);
+        .text(constructor.Year)
+        
+        d3.select("Points")
+        .text(constructor.Points)
+        
+        
       })//tool tip off
     .on("mouseleave",function()
     {
@@ -196,7 +201,7 @@ var initGraph = function (constructors) {
         .range([0, graph.width])
 
     var yScale = d3.scaleLinear()
-        .domain([0, 500])
+        .domain([0, 800])
         .range([graph.height, 0])
 
     drawAxes(graph, margins, xScale, yScale);
@@ -207,7 +212,7 @@ var initGraph = function (constructors) {
 
 
 
-var racingPromise = d3.csv("/constructors.csv")
+var constructorPromise = d3.csv("/constructors.csv")
 
 var successFCN = function (constructors) {
     console.log("constructors", constructors)
@@ -221,9 +226,12 @@ var failureFCN = function (error) {
     setBanner("Constructors not found")
 }
 
-racingPromise.then(successFCN, failureFCN)
+constructorPromise.then(successFCN, failureFCN)
 
 var setBanner = function (message) {
-    d3.select("#banner")
+    d3.select("#constructorBanner")
         .text(message)
 }
+
+
+
