@@ -226,7 +226,7 @@ var initGraph = function (drivers) {
         .range([0, graph.width])
 
     var yScale = d3.scaleLinear()
-        .domain([0, 800])
+        .domain([0, 500])
         .range([graph.height, 0])
 
     drawAxes(graph, margins, xScale, yScale);
