@@ -92,7 +92,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
             return xScale(race.Year)
         })
         .attr("cy", function (race) {
-            return yScale(race.Points)
+            return yScale(race.Position)
         })
         .attr("r", 2.5)
         .on("mouseenter", function (race) {
@@ -108,8 +108,8 @@ var drawLines = function (constructors, target, xScale, yScale) {
             d3.select("#team")
                 .text(race.Team)
 
-            d3.select("points")
-                .text(race.Points)
+            d3.select("position")
+                .text(race.position)
 
 
         }) //tool tip off
@@ -160,7 +160,7 @@ var drawLabels = function (graphDim, margins) {
         .classed("labels", true)
 
     labels.append("text")
-        .text("Constructor Points Over Time")
+        .text("Constructor Position Over Time")
         .classed("title", true)
         .attr("text-anchor", "middle")
         .attr("x", margins.left + (graphDim.width / 2))
@@ -176,7 +176,7 @@ var drawLabels = function (graphDim, margins) {
         .attr("transform", "translate(0," +
             ((graphDim.height / 2)) + ")")
         .append("text")
-        .text("Points")
+        .text("Position")
         .classed("label", true)
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(90)")
@@ -223,7 +223,7 @@ var initGraph = function (constructors) {
         .range([0, graph.width])
 
     var yScale = d3.scaleLinear()
-        .domain([0, 30])
+        .domain([0, 20])
         .range([graph.height, 0])
 
     drawAxes(graph, margins, xScale, yScale);
