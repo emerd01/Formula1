@@ -5,3 +5,11 @@ p {
     align-content: center;
     line-height: 1.5;
 }
+
+title {
+    font-size: 40px;
+    font-family:sans-serif;
+    width: 500;
+    align-content: center;
+    line-height: 1.5;
+}
