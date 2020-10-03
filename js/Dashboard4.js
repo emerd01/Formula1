@@ -1,14 +1,14 @@
-var groupByTeam = function (cars) {
+var groupByDriver = function (cars) {
     var keys = [];
     var dict = {};
 
 
     cars.forEach(function (car) {
-        if (dict[car.Team]) {
-            dict[car.Team].push(car);
+        if (dict[car.Driver]) {
+            dict[car.Driver].push(car);
         } else {
-            dict[car.Team] = [car];
-            keys.push(car.Team);
+            dict[car.Driver] = [car];
+            keys.push(car.Driver);
         }
     })
 
@@ -21,27 +21,27 @@ var groupByTeam = function (cars) {
     return grouped;
 }
 
-var drawLines = function (constructors, target, xScale, yScale) {
-    var teams = groupByTeam(constructors)
+var drawLines = function (drivers, target, xScale, yScale) {
+    var competitors = groupByDriver(drivers)
     /*var lineGenerator = d3.line()
-        .x(function (teamYear) {
-            return xScale(teamYear.Year)
+        .x(function (driverYear) {
+            return xScale(driverYear.Year)
         })
-        .y(function (teamYear) {
-            return yScale(teamYear.Points)
+        .y(function (driverYear) {
+            return yScale(driverYear.Points)
         })
-        //.curve(d3.curveCardinal)
+        .curve(d3.curveCardinal)
         
     var lines = target
         .selectAll("g")
-        .data(teams)
+        .data(competitors)
         .enter()
         .append("g")
         .classed("line", true)
         .attr("fill", "none")
         .attr("stroke", "black")
         .attr("stroke-width", 10)
-        .on("mouseover", function (team) {
+        .on("mouseover", function (driver) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
@@ -61,7 +61,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
                 .style("left", xPos + "px")
 
         })
-        .on("mouseout", function (team) {
+        .on("mouseout", function (driver) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
@@ -75,8 +75,8 @@ var drawLines = function (constructors, target, xScale, yScale) {
 
 
     lines.append("path")
-        .datum(function(team){
-        return team
+        .datum(function(driver){
+        return driver
     })
         .attr("d", lineGenerator)
 
@@ -85,14 +85,14 @@ var drawLines = function (constructors, target, xScale, yScale) {
 
     target
         .selectAll("circle")
-        .data(constructors)
+        .data(drivers)
         .enter()
         .append("circle")
         .attr("cx", function (race) {
             return xScale(race.Year)
         })
         .attr("cy", function (race) {
-            return yScale(race.Points)
+            return yScale(race.Position)
         })
         .attr("r", 2.5)
         .on("mouseenter", function (race) {
@@ -105,11 +105,14 @@ var drawLines = function (constructors, target, xScale, yScale) {
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
 
-            d3.select("#team")
-                .text(race.Team)
+            d3.select("#Team")
+                .text(driver.Team)
 
-            d3.select("points")
-                .text(race.Points)
+            d3.select("#Year")
+                .text(driver.Year)
+
+            d3.select("Position")
+                .text(driver.Position)
 
 
         }) //tool tip off
@@ -160,7 +163,7 @@ var drawLabels = function (graphDim, margins) {
         .classed("labels", true)
 
     labels.append("text")
-        .text("Constructor Points Over Time")
+        .text("Driver Position Over Time")
         .classed("title", true)
         .attr("text-anchor", "middle")
         .attr("x", margins.left + (graphDim.width / 2))
@@ -176,7 +179,7 @@ var drawLabels = function (graphDim, margins) {
         .attr("transform", "translate(0," +
             ((graphDim.height / 2)) + ")")
         .append("text")
-        .text("Points")
+        .text("Position")
         .classed("label", true)
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(90)")
@@ -184,7 +187,7 @@ var drawLabels = function (graphDim, margins) {
 
 
 //sets up several important variables and calls the functions for the visualization.
-var initGraph = function (constructors) {
+var initGraph = function (drivers) {
     //size of screen
     var screen = {
         width: 800,
@@ -219,7 +222,7 @@ var initGraph = function (constructors) {
 
 
     var xScale = d3.scaleLinear()
-        .domain([1958, 2020])
+        .domain([1950, 2020])
         .range([0, graph.width])
 
     var yScale = d3.scaleLinear()
@@ -227,22 +230,22 @@ var initGraph = function (constructors) {
         .range([graph.height, 0])
 
     drawAxes(graph, margins, xScale, yScale);
-    drawLines(constructors, target, xScale, yScale);
+    drawLines(drivers, target, xScale, yScale);
     drawLabels(graph, margins);
-    groupByTeam(constructors)
+    groupByDriver(drivers)
 
 }
 
-var successFCN = function (constructors) {
-    console.log("constructors", constructors)
-    setBanner("Here are your constructors")
-    initGraph(constructors)
+var successFCN = function (drivers) {
+    console.log("drivers", drivers)
+    setBanner("Here are your drivers")
+    initGraph(drivers)
 
 }
 
 var failureFCN = function (error) {
     console.log("error", error)
-    setBanner("Constructors not found")
+    setBanner("Drivers not found")
 }
 
 var constructorPromise = d3.csv("../constructors.csv")
@@ -254,7 +257,7 @@ var promises = [constructorPromise, driverPromise]
 Promise.all(promises)
 .then(successFCN, failureFCN)
 
-constructorPromise.then(successFCN, failureFCN)
+driverPromise.then(successFCN, failureFCN)
 
 
 var setBanner = function (message) {
