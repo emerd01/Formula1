@@ -1,14 +1,14 @@
-var groupByDriver = function (cars) {
+var groupByCompetitor = function (cars) {
     var keys = [];
     var dict = {};
 
 
     cars.forEach(function (car) {
-        if (dict[car.Driver]) {
-            dict[car.Driver].push(car);
+        if (dict[car.Name]) {
+            dict[car.Name].push(car);
         } else {
-            dict[car.Driver] = [car];
-            keys.push(car.Driver);
+            dict[car.Name] = [car];
+            keys.push(car.Name);
         }
     })
 
@@ -22,8 +22,8 @@ var groupByDriver = function (cars) {
 }
 
 var drawLines = function (drivers, target, xScale, yScale) {
-    var competitors = groupByDriver(drivers)
-    /*var lineGenerator = d3.line()
+    var competitors = groupByCompetitor(drivers)
+    var lineGenerator = d3.line()
         .x(function (driverYear) {
             return xScale(driverYear.Year)
         })
@@ -80,7 +80,7 @@ var drawLines = function (drivers, target, xScale, yScale) {
     })
         .attr("d", lineGenerator)
 
-    */
+    
 
 
     target
@@ -105,13 +105,13 @@ var drawLines = function (drivers, target, xScale, yScale) {
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
 
-            d3.select("#Team")
+            d3.select("#team")
                 .text(driver.Team)
 
-            d3.select("#Year")
+            d3.select("#year")
                 .text(driver.Year)
 
-            d3.select("Points")
+            d3.select("points")
                 .text(driver.Points)
 
 
@@ -232,7 +232,7 @@ var initGraph = function (drivers) {
     drawAxes(graph, margins, xScale, yScale);
     drawLines(drivers, target, xScale, yScale);
     drawLabels(graph, margins);
-    groupByDriver(drivers)
+    groupByCompetitor(drivers)
 
 }
 
@@ -248,14 +248,14 @@ var failureFCN = function (error) {
     setBanner("Drivers not found")
 }
 
-var constructorPromise = d3.csv("../constructors.csv")
+//var constructorPromise = d3.csv("../constructors.csv")
 
 var driverPromise = d3.csv("../drivers.csv")
 
-var promises = [constructorPromise, driverPromise]
+//var promises = [constructorPromise, driverPromise]
 
-Promise.all(promises)
-.then(successFCN, failureFCN)
+//Promise.all(promises)
+//.then(successFCN, failureFCN)
 
 driverPromise.then(successFCN, failureFCN)
 

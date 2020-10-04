@@ -4,11 +4,11 @@ var groupByDriver = function (cars) {
 
 
     cars.forEach(function (car) {
-        if (dict[car.Driver]) {
-            dict[car.Driver].push(car);
+        if (dict[car.Name]) {
+            dict[car.Name].push(car);
         } else {
-            dict[car.Driver] = [car];
-            keys.push(car.Driver);
+            dict[car.Name] = [car];
+            keys.push(car.Name);
         }
     })
 
@@ -23,12 +23,12 @@ var groupByDriver = function (cars) {
 
 var drawLines = function (drivers, target, xScale, yScale) {
     var competitors = groupByDriver(drivers)
-    /*var lineGenerator = d3.line()
+    var lineGenerator = d3.line()
         .x(function (driverYear) {
             return xScale(driverYear.Year)
         })
         .y(function (driverYear) {
-            return yScale(driverYear.Points)
+            return yScale(driverYear.Position)
         })
         .curve(d3.curveCardinal)
         
@@ -80,7 +80,7 @@ var drawLines = function (drivers, target, xScale, yScale) {
     })
         .attr("d", lineGenerator)
 
-    */
+    
 
 
     target

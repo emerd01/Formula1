@@ -23,14 +23,14 @@ var groupByTeam = function (cars) {
 
 var drawLines = function (constructors, target, xScale, yScale) {
     var teams = groupByTeam(constructors)
-    /*var lineGenerator = d3.line()
+    var lineGenerator = d3.line()
         .x(function (teamYear) {
             return xScale(teamYear.Year)
         })
         .y(function (teamYear) {
-            return yScale(teamYear.Points)
+            return yScale(teamYear.Position)
         })
-        //.curve(d3.curveCardinal)
+        .curve(d3.curveCardinal)
         
     var lines = target
         .selectAll("g")
@@ -80,7 +80,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
     })
         .attr("d", lineGenerator)
 
-    */
+    
 
 
     target
