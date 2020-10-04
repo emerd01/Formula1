@@ -24,6 +24,7 @@ var groupByCompetitor = function (cars) {
 var drawLines = function (drivers, target, xScale, yScale) {
     var competitors = groupByCompetitor(drivers)
     var lineGenerator = d3.line()
+        .defined(d => !isNaN(d.Points))
         .x(function (driverYear) {
             return xScale(driverYear.Year)
         })
@@ -31,7 +32,7 @@ var drawLines = function (drivers, target, xScale, yScale) {
             return yScale(driverYear.Points)
         })
         .curve(d3.curveCardinal)
-        
+
     var lines = target
         .selectAll("g")
         .data(competitors)
@@ -69,18 +70,16 @@ var drawLines = function (drivers, target, xScale, yScale) {
             d3.select("#tooltip")
                 .classed("hidden", true)
 
-
-
         })
 
 
     lines.append("path")
-        .datum(function(driver){
-        return driver
-    })
+        .datum(function (driver) {
+            return driver
+        })
         .attr("d", lineGenerator)
 
-    
+
 
 
     target
@@ -105,14 +104,9 @@ var drawLines = function (drivers, target, xScale, yScale) {
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
 
-            d3.select("#team")
-                .text(driver.Team)
+            d3.select("#name")
+                .text(race.Name)
 
-            d3.select("#year")
-                .text(driver.Year)
-
-            d3.select("points")
-                .text(driver.Points)
 
 
         }) //tool tip off

@@ -17,6 +17,8 @@ var groupByTeam = function (cars) {
     })
 
     console.log("grouped", grouped);
+    console.log("grouped length", grouped.length);
+    
 
     return grouped;
 }
@@ -30,7 +32,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
         .y(function (teamYear) {
             return yScale(teamYear.Points)
         })
-        //.curve(d3.curveCardinal)
+        .curve(d3.curveCardinal)
         
     var lines = target
         .selectAll("g")
@@ -59,6 +61,12 @@ var drawLines = function (constructors, target, xScale, yScale) {
                 .classed("hidden", false)
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
+            
+            d3.select("#team")
+                .text(race.Team)
+
+            d3.select("points")
+                .text(race.Points)
 
         })
         .on("mouseout", function (team) {
@@ -96,7 +104,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
         })
         .attr("r", 2.5)
         .on("mouseenter", function (race) {
-
+        
             var xPos = d3.event.pageX;
             var yPos = d3.event.pageY;
 
@@ -219,11 +227,11 @@ var initGraph = function (constructors) {
 
 
     var xScale = d3.scaleLinear()
-        .domain([1958, 2020])
+        .domain([1958, 2005])
         .range([0, graph.width])
 
     var yScale = d3.scaleLinear()
-        .domain([0, 800])
+        .domain([0, 300])
         .range([graph.height, 0])
 
     drawAxes(graph, margins, xScale, yScale);

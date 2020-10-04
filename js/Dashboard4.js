@@ -17,6 +17,7 @@ var groupByDriver = function (cars) {
     })
 
     console.log("grouped", grouped);
+    
 
     return grouped;
 }
