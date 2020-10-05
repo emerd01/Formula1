@@ -21,10 +21,9 @@ var groupByCompetitor = function (cars) {
     return grouped;
 }
 
-var drawLines = function (drivers, target, xScale, yScale) {
+var drawLines3 = function (drivers, target, xScale, yScale) {
     var competitors = groupByCompetitor(drivers)
     var lineGenerator = d3.line()
-        .defined(d => !isNaN(d.Points))
         .x(function (driverYear) {
             return xScale(driverYear.Year)
         })
@@ -129,7 +128,7 @@ var makeTranslateString = function (x, y) {
 //graphDim is an object that describes the width and height of the graph area.
 //margins is an object that describes the space around the graph
 //xScale and yScale are the scales for the x and y scale.
-var drawAxes = function (graphDim, margins, xScale, yScale) {
+var drawAxes3 = function (graphDim, margins, xScale, yScale) {
 
     var xAxis = d3.axisBottom()
         .scale(xScale)
@@ -138,7 +137,7 @@ var drawAxes = function (graphDim, margins, xScale, yScale) {
     var yAxis = d3.axisLeft()
         .scale(yScale)
 
-    var axes = d3.select("svg")
+    var axes = d3.select("#driverGraph")
         .append("g")
     axes.append("g")
         .attr("transform", makeTranslateString(margins.left, margins.top + graphDim.height))
@@ -151,8 +150,8 @@ var drawAxes = function (graphDim, margins, xScale, yScale) {
 
 //graphDim -object that stores dimensions of the graph area
 //margins - object that stores the size of the margins
-var drawLabels = function (graphDim, margins) {
-    var labels = d3.select("svg")
+var drawLabels3 = function (graphDim, margins) {
+    var labels = d3.select("#driverGraph")
         .append("g")
         .classed("labels", true)
 
@@ -181,7 +180,7 @@ var drawLabels = function (graphDim, margins) {
 
 
 //sets up several important variables and calls the functions for the visualization.
-var initGraph = function (drivers) {
+var initGraph3 = function (drivers) {
     //size of screen
     var screen = {
         width: 800,
@@ -203,13 +202,13 @@ var initGraph = function (drivers) {
     }
     console.log(graph);
 
-    d3.select("svg")
+    d3.select("#driverGraph")
         .attr("width", screen.width)
         .attr("height", screen.height)
 
-    var target = d3.select("svg")
+    var target = d3.select("#driverGraph")
         .append("g")
-        .attr("id", "graph")
+        .attr("id", "driverCanvas")
         .attr("transform",
             "translate(" + margins.left + "," +
             margins.top + ")");
@@ -220,24 +219,24 @@ var initGraph = function (drivers) {
         .range([0, graph.width])
 
     var yScale = d3.scaleLinear()
-        .domain([0, 500])
+        .domain([0, 450])
         .range([graph.height, 0])
 
-    drawAxes(graph, margins, xScale, yScale);
-    drawLines(drivers, target, xScale, yScale);
-    drawLabels(graph, margins);
+    drawAxes3(graph, margins, xScale, yScale);
+    drawLines3(drivers, target, xScale, yScale);
+    drawLabels3(graph, margins);
     groupByCompetitor(drivers)
 
 }
 
-var successFCN = function (drivers) {
+var successFCN3 = function (drivers) {
     console.log("drivers", drivers)
-    setBanner("Here are your drivers")
-    initGraph(drivers)
+    //setBanner("Here are your drivers")
+    initGraph3(drivers)
 
 }
 
-var failureFCN = function (error) {
+var failureFCN3 = function (error) {
     console.log("error", error)
     setBanner("Drivers not found")
 }
@@ -251,10 +250,6 @@ var driverPromise = d3.csv("../drivers.csv")
 //Promise.all(promises)
 //.then(successFCN, failureFCN)
 
-driverPromise.then(successFCN, failureFCN)
+driverPromise.then(successFCN3, failureFCN3)
 
 
-var setBanner = function (message) {
-    d3.select("#constructorBanner")
-        .text(message)
-}

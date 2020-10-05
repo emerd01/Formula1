@@ -12,18 +12,41 @@ var groupByTeam = function (cars) {
         }
     })
 
-    var grouped = keys.map(function (key) {
+    var groupedTeams = keys.map(function (key) {
         return dict[key];
     })
 
-    console.log("grouped", grouped);
-    console.log("grouped length", grouped.length);
+    //console.log("grouped", groupedTeams);
+    //console.log("grouped length", groupedTeams.length);
     
 
-    return grouped;
+    return groupedTeams;
 }
 
-var drawLines = function (constructors, target, xScale, yScale) {
+var groupByCompetitor = function (cars) {
+    var keys = [];
+    var dict = {};
+
+
+    cars.forEach(function (car) {
+        if (dict[car.Name]) {
+            dict[car.Name].push(car);
+        } else {
+            dict[car.Name] = [car];
+            keys.push(car.Name);
+        }
+    })
+
+    var groupedDrivers = keys.map(function (key) {
+        return dict[key];
+    })
+
+    //console.log("grouped", groupedDrivers);
+
+    return groupedDrivers;
+}
+
+var drawLinesConstructor = function (constructors, targetConstructor, xScale, yScale) {
     var teams = groupByTeam(constructors)
     var lineGenerator = d3.line()
         .x(function (teamYear) {
@@ -34,7 +57,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
         })
         //.curve(d3.curveCardinal)
         
-    var lines = target
+    var lines = targetConstructor
         .selectAll("g")
         .data(teams)
         .enter()
@@ -51,7 +74,9 @@ var drawLines = function (constructors, target, xScale, yScale) {
                 d3.select(this)
                     .classed("selected", true)
                     .raise()
-
+                
+                //d3.select("#team")
+                //.text(team.Team)
 
             }
             var xPos = d3.event.pageX;
@@ -62,11 +87,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
             
-            d3.select("#team")
-                .text(race.Team)
 
-            d3.select("points")
-                .text(race.Points)
 
         })
         .on("mouseout", function (team) {
@@ -91,7 +112,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
 
 
 
-    target
+    targetConstructor
         .selectAll("circle")
         .data(constructors)
         .enter()
@@ -129,6 +150,107 @@ var drawLines = function (constructors, target, xScale, yScale) {
 
 
 }
+
+var drawLinesDriver = function (drivers, targetDriver, xScale, yScale) {
+    var competitors = groupByCompetitor(drivers)
+    var lineGenerator = d3.line()
+        .defined(d => !isNaN(d.Points))
+        .x(function (driverYear) {
+            return xScale(driverYear.Year)
+        })
+        .y(function (driverYear) {
+            return yScale(driverYear.Points)
+        })
+        .curve(d3.curveCardinal)
+
+    var lines = targetDriver
+        .selectAll("g")
+        .data(competitors)
+        .enter()
+        .append("g")
+        .classed("line", true)
+        .attr("fill", "none")
+        .attr("stroke", "black")
+        .attr("stroke-width", 10)
+        .on("mouseover", function (driver) {
+            if (!d3.select(this).classed("off")) {
+                d3.selectAll(".line")
+                    .classed("selected", false)
+
+                d3.select(this)
+                    .classed("selected", true)
+                    .raise()
+                d3.select("#name")
+                .text(driver.Name)
+
+
+            }
+            var xPos = d3.event.pageX;
+            var yPos = d3.event.pageY;
+
+            d3.select("#tooltip")
+                .classed("hidden", false)
+                .style("top", yPos + "px")
+                .style("left", xPos + "px")
+
+        })
+        .on("mouseout", function (driver) {
+            if (!d3.select(this).classed("off")) {
+                d3.selectAll(".line")
+                    .classed("selected", false)
+            }
+            d3.select("#tooltip")
+                .classed("hidden", true)
+
+        })
+
+
+    lines.append("path")
+        .datum(function (driver) {
+            return driver
+        })
+        .attr("d", lineGenerator)
+
+
+
+
+    targetDriver
+        .selectAll("circle")
+        .data(drivers)
+        .enter()
+        .append("circle")
+        .attr("cx", function (race) {
+            return xScale(race.Year)
+        })
+        .attr("cy", function (race) {
+            return yScale(race.Points)
+        })
+        .attr("r", 2.5)
+        .on("mouseenter", function (race) {
+
+            var xPos = d3.event.pageX;
+            var yPos = d3.event.pageY;
+
+            d3.select("#tooltip")
+                .classed("hidden", false)
+                .style("top", yPos + "px")
+                .style("left", xPos + "px")
+
+            d3.select("#name")
+                .text(race.Name)
+
+
+
+        }) //tool tip off
+        .on("mouseleave", function () {
+            d3.select("#tooltip")
+                .classed("hidden", true);
+        })
+
+
+
+}
+
 
 
 
@@ -192,7 +314,7 @@ var drawLabels = function (graphDim, margins) {
 
 
 //sets up several important variables and calls the functions for the visualization.
-var initGraph = function (constructors) {
+var initGraphConstructor = function (constructors) {
     //size of screen
     var screen = {
         width: 800,
@@ -208,19 +330,19 @@ var initGraph = function (constructors) {
 
 
 
-    var graph = {
+    var constructorGraph = {
         width: screen.width - margins.left - margins.right,
         height: screen.height - margins.top - margins.bottom
     }
-    console.log(graph);
+    console.log("constructor graph", constructorGraph);
 
     d3.select("svg")
         .attr("width", screen.width)
         .attr("height", screen.height)
 
-    var target = d3.select("svg")
+    var targetConstructor = d3.select("svg")
         .append("g")
-        .attr("id", "graph")
+        .attr("id", "constructorGraph")
         .attr("transform",
             "translate(" + margins.left + "," +
             margins.top + ")");
@@ -228,25 +350,78 @@ var initGraph = function (constructors) {
 
     var xScale = d3.scaleLinear()
         .domain([1958, 2020])
-        .range([0, graph.width])
+        .range([0, constructorGraph.width])
 
     var yScale = d3.scaleLinear()
         .domain([0, 800])
-        .range([graph.height, 0])
+        .range([constructorGraph.height, 0])
 
-    drawAxes(graph, margins, xScale, yScale);
-    drawLines(constructors, target, xScale, yScale);
-    drawLabels(graph, margins);
+    drawAxes(constructorGraph, margins, xScale, yScale);
+    drawLinesConstructor(constructors, targetConstructor, xScale, yScale);
+    drawLabels(constructorGraph, margins);
     groupByTeam(constructors)
 
 }
+
+var initGraphDriver = function (drivers) {
+    //size of screen
+    var screen = {
+        width: 800,
+        height: 700
+    }
+    //how much space on each side
+    var margins = {
+        left: 35,
+        right: 20,
+        top: 50,
+        bottom: 50
+    }
+
+
+
+    var driverGraph = {
+        width: screen.width - margins.left - margins.right,
+        height: screen.height - margins.top - margins.bottom
+    }
+    console.log("driver graph", driverGraph);
+
+    d3.select("svg")
+        .attr("width", screen.width)
+        .attr("height", screen.height)
+
+    var targetDriver = d3.select("svg")
+        .append("g")
+        .attr("id", "driverGraph")
+        .attr("transform",
+            "translate(" + margins.left + "," +
+            margins.top + ")");
+
+
+    var xScale = d3.scaleLinear()
+        .domain([1958, 2020])
+        .range([0, driverGraph.width])
+
+    var yScale = d3.scaleLinear()
+        .domain([0, 800])
+        .range([driverGraph.height, 0])
+
+    drawAxes(driverGraph, margins, xScale, yScale);
+    drawLinesDriver(drivers, targetDriver, xScale, yScale);
+    drawLabels(driverGraph, margins);
+    groupByCompetitor(drivers)
+
+}
+
+
+
 
 var successFCN = function (values) {
     console.log("values", values)
     
     var constructors = values[0]
     var drivers = values[1]
-    initGraph(constructors)
+    initGraphConstructor(constructors)
+    initGraphDriver(drivers)
     
 
 }

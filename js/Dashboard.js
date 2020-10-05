@@ -149,7 +149,7 @@ var drawAxes = function (graphDim, margins, xScale, yScale) {
     var yAxis = d3.axisLeft()
         .scale(yScale)
 
-    var axes = d3.select("svg")
+    var axes = d3.select("#constructorGraph")
         .append("g")
     axes.append("g")
         .attr("transform", makeTranslateString(margins.left, margins.top + graphDim.height))
@@ -163,7 +163,7 @@ var drawAxes = function (graphDim, margins, xScale, yScale) {
 //graphDim -object that stores dimensions of the graph area
 //margins - object that stores the size of the margins
 var drawLabels = function (graphDim, margins) {
-    var labels = d3.select("svg")
+    var labels = d3.select("#constructorGraph")
         .append("g")
         .classed("labels", true)
 
@@ -214,24 +214,24 @@ var initGraph = function (constructors) {
     }
     console.log(graph);
 
-    d3.select("svg")
+    d3.select("#constructorGraph")
         .attr("width", screen.width)
         .attr("height", screen.height)
 
-    var target = d3.select("svg")
+    var target = d3.select("#constructorGraph")
         .append("g")
-        .attr("id", "graph")
+        .attr("id", "constructorCanvas")
         .attr("transform",
             "translate(" + margins.left + "," +
             margins.top + ")");
 
 
     var xScale = d3.scaleLinear()
-        .domain([1958, 2005])
+        .domain([1958, 2020])
         .range([0, graph.width])
 
     var yScale = d3.scaleLinear()
-        .domain([0, 300])
+        .domain([0, 800])
         .range([graph.height, 0])
 
     drawAxes(graph, margins, xScale, yScale);

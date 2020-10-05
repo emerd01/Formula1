@@ -33,7 +33,8 @@ var drawLines = function (drivers, target, xScale, yScale) {
         })
         .curve(d3.curveCardinal)
         
-    var lines = target
+    var lines = d3.select("svg")
+        .select("#driverGraph")
         .selectAll("g")
         .data(competitors)
         .enter()
@@ -216,7 +217,7 @@ var initGraph = function (drivers) {
 
     var target = d3.select("svg")
         .append("g")
-        .attr("id", "graph")
+        .attr("id", "driverGraph")
         .attr("transform",
             "translate(" + margins.left + "," +
             margins.top + ")");
