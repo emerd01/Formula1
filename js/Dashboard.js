@@ -18,7 +18,7 @@ var groupByTeam = function (cars) {
 
     console.log("grouped", grouped);
     console.log("grouped length", grouped.length);
-    
+
 
     return grouped;
 }
@@ -33,7 +33,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
             return yScale(teamYear.Points)
         })
         .curve(d3.curveCardinal)
-        
+
     var lines = target
         .selectAll("g")
         .data(teams)
@@ -61,12 +61,12 @@ var drawLines = function (constructors, target, xScale, yScale) {
                 .classed("hidden", false)
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
-            
+
             d3.select("#team")
-                .text(race.Team)
+                .text(team.Team)
 
             d3.select("points")
-                .text(race.Points)
+                .text(team.Points)
 
         })
         .on("mouseout", function (team) {
@@ -83,9 +83,9 @@ var drawLines = function (constructors, target, xScale, yScale) {
 
 
     lines.append("path")
-        .datum(function(team){
-        return team
-    })
+        .datum(function (team) {
+            return team
+        })
         .attr("d", lineGenerator)
 
 
@@ -104,7 +104,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
         })
         .attr("r", 2.5)
         .on("mouseenter", function (race) {
-        
+
             var xPos = d3.event.pageX;
             var yPos = d3.event.pageY;
 
@@ -241,8 +241,12 @@ var initGraph = function (constructors) {
 
 }
 
-var successFCN = function (constructors) {
-    console.log("constructors", constructors)
+var successFCN = function (values) {
+    
+    var constructors = values[0]
+    
+    var colors = values[1]
+    
     setBanner("Here are your constructors")
     initGraph(constructors)
 
@@ -255,12 +259,12 @@ var failureFCN = function (error) {
 
 var constructorPromise = d3.csv("../constructors.csv")
 
-var driverPromise = d3.csv("../drivers.csv")
+var colorPromise = d3.csv("../colors.csv")
 
-var promises = [constructorPromise, driverPromise]
+var constructorPromises = [constructorPromise, colorPromise]
 
-Promise.all(promises)
-.then(successFCN, failureFCN)
+Promise.all(constructorPromises)
+    .then(successFCN, failureFCN)
 
 constructorPromise.then(successFCN, failureFCN)
 

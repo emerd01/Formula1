@@ -50,6 +50,9 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                     .classed("selected", true)
                     .raise()
 
+                d3.select("#name")
+                    .text(driver.Name)
+
 
             }
             var xPos = d3.event.pageX;
@@ -229,9 +232,14 @@ var initGraph3 = function (drivers) {
 
 }
 
-var successFCN3 = function (drivers) {
-    console.log("drivers", drivers)
-    //setBanner("Here are your drivers")
+var successFCN3 = function (driverValues) {
+    
+    var drivers = driverValues[0]
+    
+    var colors = driverValues[1]
+    
+    console.log("colors", colors)
+    
     initGraph3(drivers)
 
 }
@@ -241,15 +249,14 @@ var failureFCN3 = function (error) {
     setBanner("Drivers not found")
 }
 
-//var constructorPromise = d3.csv("../constructors.csv")
 
 var driverPromise = d3.csv("../drivers.csv")
 
-//var promises = [constructorPromise, driverPromise]
+var colorPromise = d3.csv("../colors.csv")
 
-//Promise.all(promises)
-//.then(successFCN, failureFCN)
+var driverPromises = [driverPromise, colorPromise]
+
+Promise.all(driverPromises)
+    .then(successFCN3, failureFCN3)
 
 driverPromise.then(successFCN3, failureFCN3)
-
-
