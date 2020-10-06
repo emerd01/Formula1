@@ -1,14 +1,14 @@
-var groupByCompetitor = function (cars) {
+var groupByTeam = function (cars) {
     var keys = [];
     var dict = {};
 
 
     cars.forEach(function (car) {
-        if (dict[car.Name]) {
-            dict[car.Name].push(car);
+        if (dict[car.Team]) {
+            dict[car.Team].push(car);
         } else {
-            dict[car.Name] = [car];
-            keys.push(car.Name);
+            dict[car.Team] = [car];
+            keys.push(car.Team);
         }
     })
 
@@ -21,27 +21,27 @@ var groupByCompetitor = function (cars) {
     return grouped;
 }
 
-var drawLines3 = function (drivers, target, xScale, yScale) {
-    var competitors = groupByCompetitor(drivers)
+var drawLines = function (positions, target, xScale, yScale) {
+    var teams = groupByTeam(positions)
     var lineGenerator = d3.line()
-        .x(function (driverYear) {
-            return xScale(driverYear.Year)
+        .x(function (teamYear) {
+            return xScale(teamYear.Year)
         })
-        .y(function (driverYear) {
-            return yScale(driverYear.Points)
+        .y(function (teamYear) {
+            return yScale(teamYear.Position)
         })
         .curve(d3.curveCardinal)
-
+        
     var lines = target
         .selectAll("g")
-        .data(competitors)
+        .data(teams)
         .enter()
         .append("g")
         .classed("line", true)
         .attr("fill", "none")
         .attr("stroke", "black")
         .attr("stroke-width", 10)
-        .on("mouseover", function (driver) {
+        .on("mouseover", function (team) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
@@ -49,9 +49,6 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                 d3.select(this)
                     .classed("selected", true)
                     .raise()
-
-                d3.select("#name")
-                    .text(driver.Name)
 
 
             }
@@ -64,7 +61,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                 .style("left", xPos + "px")
 
         })
-        .on("mouseout", function (driver) {
+        .on("mouseout", function (team) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
@@ -72,28 +69,30 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
             d3.select("#tooltip")
                 .classed("hidden", true)
 
+
+
         })
 
 
     lines.append("path")
-        .datum(function (driver) {
-            return driver
-        })
+        .datum(function(team){
+        return team
+    })
         .attr("d", lineGenerator)
 
-
+    
 
 
     target
         .selectAll("circle")
-        .data(drivers)
+        .data(positions)
         .enter()
         .append("circle")
         .attr("cx", function (race) {
             return xScale(race.Year)
         })
         .attr("cy", function (race) {
-            return yScale(race.Points)
+            return yScale(race.Position)
         })
         .attr("r", 2.5)
         .on("mouseenter", function (race) {
@@ -106,9 +105,11 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
 
-            d3.select("#name")
-                .text(race.Name)
+            d3.select("#team")
+                .text(race.Team)
 
+            d3.select("position")
+                .text(race.Position)
 
 
         }) //tool tip off
@@ -131,7 +132,7 @@ var makeTranslateString = function (x, y) {
 //graphDim is an object that describes the width and height of the graph area.
 //margins is an object that describes the space around the graph
 //xScale and yScale are the scales for the x and y scale.
-var drawAxes3 = function (graphDim, margins, xScale, yScale) {
+var drawAxes = function (graphDim, margins, xScale, yScale) {
 
     var xAxis = d3.axisBottom()
         .scale(xScale)
@@ -140,7 +141,7 @@ var drawAxes3 = function (graphDim, margins, xScale, yScale) {
     var yAxis = d3.axisLeft()
         .scale(yScale)
 
-    var axes = d3.select("#driverGraph")
+    var axes = d3.select("svg")
         .append("g")
     axes.append("g")
         .attr("transform", makeTranslateString(margins.left, margins.top + graphDim.height))
@@ -153,13 +154,13 @@ var drawAxes3 = function (graphDim, margins, xScale, yScale) {
 
 //graphDim -object that stores dimensions of the graph area
 //margins - object that stores the size of the margins
-var drawLabels3 = function (graphDim, margins) {
-    var labels = d3.select("#driverGraph")
+var drawLabels = function (graphDim, margins) {
+    var labels = d3.select("svg")
         .append("g")
         .classed("labels", true)
 
     labels.append("text")
-        .text("Driver Points Over Time")
+        .text("Point Distribution Over Time")
         .classed("title", true)
         .attr("text-anchor", "middle")
         .attr("x", margins.left + (graphDim.width / 2))
@@ -183,7 +184,7 @@ var drawLabels3 = function (graphDim, margins) {
 
 
 //sets up several important variables and calls the functions for the visualization.
-var initGraph3 = function (drivers) {
+var initGraph = function (positions) {
     //size of screen
     var screen = {
         width: 800,
@@ -205,13 +206,13 @@ var initGraph3 = function (drivers) {
     }
     console.log(graph);
 
-    d3.select("#driverGraph")
+    d3.select("svg")
         .attr("width", screen.width)
         .attr("height", screen.height)
 
-    var target = d3.select("#driverGraph")
+    var target = d3.select("svg")
         .append("g")
-        .attr("id", "driverCanvas")
+        .attr("id", "graph")
         .attr("transform",
             "translate(" + margins.left + "," +
             margins.top + ")");
@@ -222,41 +223,40 @@ var initGraph3 = function (drivers) {
         .range([0, graph.width])
 
     var yScale = d3.scaleLinear()
-        .domain([0, 450])
+        .domain([0, 25])
         .range([graph.height, 0])
 
-    drawAxes3(graph, margins, xScale, yScale);
-    drawLines3(drivers, target, xScale, yScale);
-    drawLabels3(graph, margins);
-    groupByCompetitor(drivers)
+    drawAxes(graph, margins, xScale, yScale);
+    drawLines(positions, target, xScale, yScale);
+    drawLabels(graph, margins);
+    groupByTeam(positions)
 
 }
 
-var successFCN3 = function (driverValues) {
+var successFCN = function (values) {
+    var scoring  = values[0]
     
-    var drivers = driverValues[0]
+    var colors = values[1]
     
-    var colors = driverValues[1]
-    
-    console.log("colors", colors[0].codes)
-    
-    initGraph3(drivers)
+    console.log("scoring", scoring)
+    initGraph(scoring)
 
 }
 
-var failureFCN3 = function (error) {
+var failureFCN = function (error) {
     console.log("error", error)
-    setBanner("Drivers not found")
+    setBanner("positions not found")
 }
 
-
-var driverPromise = d3.csv("../drivers.csv")
+var scoringPromise = d3.csv("../scoring.csv")
 
 var colorPromise = d3.csv("../colors.csv")
 
-var driverPromises = [driverPromise, colorPromise]
+var promises = [scoringPromise, colorPromise]
 
-Promise.all(driverPromises)
-    .then(successFCN3, failureFCN3)
+Promise.all(promises)
+.then(successFCN, failureFCN)
 
-driverPromise.then(successFCN3, failureFCN3)
+constructorPromise.then(successFCN, failureFCN)
+
+
