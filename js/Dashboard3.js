@@ -51,14 +51,17 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
             //console.log("competitor", competitor)
             //console.log("competitor length", competitor.length)
             if (competitor.length > 10) {
-                return colors(competitor.length)
+                return colors(competitor[0].Name)
+                //return colors(competitor.length)
                 //console.log("filered", competitor.length > 3)
             }
             else {
                 return "none"
             }
+        
             
         })
+        
         .attr("stroke-width", 10)
         .on("mouseover", function (competitor) {
             if (!d3.select(this).classed("off")) {
@@ -70,7 +73,9 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                     .raise()
 
                 d3.select("#driverName")
-                    .text(competitor[0].Name)
+                    .text("Driver Name: " + competitor[0].Name)
+                d3.select("#years")
+                    .text("Years in Formula 1: " + competitor.length)
 
 
 

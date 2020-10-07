@@ -47,7 +47,8 @@ var drawLines = function (constructors, target, xScale, yScale) {
         .attr("stroke", function(constructor){
             //console.log("constructor", constructor)
             if (constructor.length > 1) {
-                return colors(constructor.length)
+                return colors(constructor[0].Team)
+                //return colors(constructor.length)
             }
         })
         .attr("stroke-width", 10)
@@ -61,7 +62,10 @@ var drawLines = function (constructors, target, xScale, yScale) {
                     .raise()
 
                 d3.select("#team")
-                    .text(team[0].Team)
+                    .text("Team Name: " + team[0].Team)
+                d3.select("#years")
+                    .text("Years in Formula 1: " + team.length)
+                
 
             }
             var xPos = d3.event.pageX;
