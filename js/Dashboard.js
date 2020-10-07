@@ -93,7 +93,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
 
 
 
-    target
+    /*target
         .selectAll("circle")
         .data(constructors)
         .enter()
@@ -129,7 +129,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
         })
 
 
-
+        */
 }
 
 
@@ -230,15 +230,16 @@ var initGraph = function (constructors) {
     var yearStart = 1958
     
     var yearEnd = 2020
-    
+    /*
     d3.select("#allTime")
         .on("click", function(){
         d3.selectAll("g")
             .remove()
         var yearStart = 1958
         var yearEnd = 2020
-        drawAxes(graph, margins, xScale, yScale)
-        drawLines(constructors, target, xScale, yScale)
+        //drawAxes(graph, margins, xScale, yScale)
+        //drawLines(constructors, target, xScale, yScale)
+        initGraph(constructors)
     })
     
     d3.select("#before2010")
@@ -247,8 +248,9 @@ var initGraph = function (constructors) {
             .remove()
         var yearStart = 1958
         var yearEnd = 2010
-        drawAxes(graph, margins, xScale, yScale)
-        drawLines(constructors, target, xScale, yScale)
+        //drawAxes(graph, margins, xScale, yScale)
+        //drawLines(constructors, target, xScale, yScale)
+        initGraph(constructors)
     })
     
     d3.select("#after2010")
@@ -257,10 +259,11 @@ var initGraph = function (constructors) {
             .remove()
         var yearStart = 2010
         var yearEnd = 2020
-        drawAxes(graph, margins, xScale, yScale);
-        drawLines(constructors, target, xScale, yScale)
+        //drawAxes(graph, margins, xScale, yScale);
+        //drawLines(constructors, target, xScale, yScale)
+        initGraph(constructors)
         })
-    
+    */
     
     var xScale = d3.scaleLinear()
         .domain([yearStart, yearEnd])

@@ -1,30 +1,35 @@
 <html>
-   
-   <head>
+
+<head>
     <link href="../css/lines.css" rel="stylesheet" type="text/css">
-    
+
 
 </head>
 
 <body>
 
     <p><a href="Main.html">Main Website</a></p>
-    <div class = "picture"><img src="../scores.jpeg" width=800></div>
-    <div class = "statement"><p>Formula 1 has had races taking place from the 1950s through today. However, as I was examining my graphs for both driver points and constuctor points, I found that a pattern arose: Around the year 2010, a huge spike in points for the teams and drivers placing in the top positions took place. When I looked further, I found that the cause for this taking place had to do with a change in how the points were distributed. Rather than following a generally linear progression of distribution, the FIA (the International Automobile Federation) decided to follow an exponentially decreasing progress. Currently, the driver that comes in first is awarded 25 points, followed by 18 points in 2nd and 15 points in 3rd. This higher separation of points in the top scoring teams and drivers makes it so teams that are already doing poorly continue to do so. Meanwhile, the top teams and drivers rake in more points and dollars than ever. Further, this divide in the sport decreases competativeness between the 10 teams and instead segments them into 3 separate "tiers." In so doing, Formula 1 does what is often an issue in America: Make the rich richer and make the poor poorer.</p></div>
+    <!--<div class="picture"><img src="../scores.jpeg" width=800></div>-->
+    <div class="graph"><svg id="pointsGraph"></svg></div>
     
-    
+
+
     <!--<svg id="constructorGraph"></svg>-->
-    <div class = "graph"><svg id="driverGraph"></svg></div>
     
-    
-    <div class = "list"><p>To Do:</p>
-    <ul>
-        <li>Replace graph picture with d3 produced graph</li>
-        <li>Add color to line</li>
-        <li>Add label to show place</li>
-        <li>Add buttons so that the graph is can be changed in scale</li>
-        <li>Add button to switch between points over time for the sport and points scored over time for the sport</li>
-    </ul>
+    <div class="graph"><svg id="driverGraph"></svg></div>
+
+<div class="statement">
+        <p>Formula 1 has had races taking place from the 1950s through today. However, as I was examining my graphs for both driver points and constuctor points, I found that a pattern arose: Around the year 2010, a huge spike in points for the teams and drivers placing in the top positions took place. When I looked further, I found that the cause for this taking place had to do with a change in how the points were distributed. Rather than following a generally linear progression of distribution, the FIA (the International Automobile Federation) decided to follow an exponentially decreasing progress. Currently, the driver that comes in first is awarded 25 points, followed by 18 points in 2nd and 15 points in 3rd. This higher separation of points in the top scoring teams and drivers makes it so teams that are already doing poorly continue to do so. Meanwhile, the top teams and drivers rake in more points and dollars than ever. Further, this divide in the sport decreases competativeness between the 10 teams and instead segments them into 3 separate "tiers." In so doing, Formula 1 does what is often an issue in America: Make the rich richer and make the poor poorer.</p>
+    </div>
+    <div class="list">
+        <p>To Do:</p>
+        <ul>
+            <li>Replace graph picture with d3 produced graph</li>
+            <li>Add color to line</li>
+            <li>Add label to show place</li>
+            <li>Add buttons so that the graph is can be changed in scale</li>
+            <li>Add button to switch between points over time for the sport and points scored over time for the sport</li>
+        </ul>
     </div>
 
 
@@ -36,35 +41,37 @@
 
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="../js/callToAction2.js"></script>
+    <script src="../js/callToAction.js"></script>
+    <script src="../js/Dashboard3.js"></script>
     
+
     <style>
-    
-    .picture
-        {
+        .picture {
             float: left;
-            width:700
         }
-        
-    .statement
-        {
-            float: right;
+
+        .statement {
+            float: left;
             width: 800;
             height: 500px;
             background-color: aliceblue;
             line-height: 3
         }
-    .graph
-        {
-            float: left;
-            width:700
+
+        .graph {
+            float: left
         }
-    .list
-        {
+
+        
+        .list {
             float: right
         }
+        
+
     </style>
-    
 
 
-</body></html>
+
+</body>
+
+</html>

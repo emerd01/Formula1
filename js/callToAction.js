@@ -326,7 +326,7 @@ var drawAxes3 = function (graphDim, margins, xScale, yScale) {
     var yAxis = d3.axisLeft()
         .scale(yScale)
 
-    var axes = d3.select("#driverGraph")
+    var axes = d3.select("#pointsGraph")
         .append("g")
     axes.append("g")
         .attr("transform", makeTranslateString(margins.left, margins.top + graphDim.height))
@@ -368,7 +368,7 @@ var drawLabels = function (graphDim, margins) {
 }
 
 var drawLabels3 = function (graphDim, margins) {
-    var labels = d3.select("#driverGraph")
+    var labels = d3.select("#pointsGraph")
         .append("g")
         .classed("labels", true)
 
@@ -491,11 +491,11 @@ var initGraph3 = function (drivers) {
     }
     console.log(graph);
 
-    d3.select("#driverGraph")
+    d3.select("#pointsGraph")
         .attr("width", screen.width)
         .attr("height", screen.height)
 
-    var target = d3.select("#driverGraph")
+    var target = d3.select("#pointsGraph")
         .append("g")
         .attr("id", "driverCanvas")
         .attr("transform",
@@ -588,6 +588,3 @@ var promises = [scoringPromise, colorPromise, driverPromise]
 
 Promise.all(promises)
 .then(successFCN, failureFCN)
-
-
-

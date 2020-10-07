@@ -94,7 +94,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
         .attr("d", lineGenerator)
 
 
-
+    /*
 
     target
         .selectAll("circle")
@@ -129,6 +129,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                 .classed("hidden", true);
         })
 
+        */
 
 
 }

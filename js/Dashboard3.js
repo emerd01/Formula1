@@ -22,6 +22,10 @@ var groupByCompetitor = function (cars) {
 }
 
 var drawLines3 = function (drivers, target, xScale, yScale) {
+    colors = d3.scaleOrdinal(d3.schemeCategory10)
+    console.log("colors", colors)
+    
+    
     var competitors = groupByCompetitor(drivers)
     var lineGenerator = d3.line()
         .x(function (driverYear) {
@@ -31,6 +35,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
             return yScale(driverYear.Points)
         })
         .curve(d3.curveCardinal)
+    
 
     var lines = target
         .selectAll("g")
@@ -41,7 +46,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
         .attr("fill", "none")
         .attr("stroke", "black")
         .attr("stroke-width", 10)
-        .on("mouseover", function (driver) {
+        .on("mouseover", function (race) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
@@ -51,7 +56,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                     .raise()
 
                 d3.select("#name")
-                    .text(driver.Name)
+                    .text(race.Name)
 
 
             }
@@ -73,6 +78,8 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                 .classed("hidden", true)
 
         })
+    
+
 
 
     lines.append("path")
@@ -82,7 +89,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
         .attr("d", lineGenerator)
 
 
-
+    /*
 
     target
         .selectAll("circle")
@@ -116,7 +123,8 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
             d3.select("#tooltip")
                 .classed("hidden", true);
         })
-
+        
+        */
 
 
 }
@@ -220,14 +228,17 @@ var initGraph3 = function (drivers) {
         
     var yearEnd = 2020
     
+    
+    /*
     d3.select("#allTime")
         .on("click", function(){
         d3.selectAll("g")
             .remove()
         var yearStart = 1950
         var yearEnd = 2020
-        drawAxes3(graph, margins, xScale, yScale)
-        drawLines3(drivers, target, xScale, yScale)
+        //drawAxes3(graph, margins, xScale, yScale);
+        //drawLines3(drivers, target, xScale, yScale);
+        initGraph3(drivers)
     })
     
     d3.select("#before2010")
@@ -236,8 +247,9 @@ var initGraph3 = function (drivers) {
             .remove()
         var yearStart = 1950
         var yearEnd = 2010
-        drawAxes3(graph, margins, xScale, yScale);
-        drawLines3(drivers, target, xScale, yScale)
+        //drawAxes3(graph, margins, xScale, yScale);
+        //drawLines3(drivers, target, xScale, yScale);
+        initGraph3(drivers)
     })
     
     d3.select("#after2010")
@@ -246,14 +258,17 @@ var initGraph3 = function (drivers) {
             .remove()
         var yearStart = 2010
         var yearEnd = 2020
-        drawAxes3(graph, margins, xScale, yScale);
-        drawLines3(drivers, target, xScale, yScale)
+        //drawAxes3(graph, margins, xScale, yScale);
+        //drawLines3(drivers, target, xScale, yScale);
+        initGraph3(drivers)
         })
+        
+    */
 
     var xScale = d3.scaleLinear()
         .domain([yearStart, yearEnd])
         .range([0, graph.width])
-    
+        
 
     var yScale = d3.scaleLinear()
         .domain([0, 450])
@@ -272,9 +287,9 @@ var successFCN3 = function (driverValues) {
     
     var drivers = driverValues[0]
     
-    var colors = driverValues[1]
+    //var colors = driverValues[1]
     
-    console.log("colors", colors)
+    //console.log("colors", colors)
     
     initGraph3(drivers)
 
