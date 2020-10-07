@@ -25,6 +25,7 @@ var groupByTeam = function (cars) {
 
 var drawLines = function (constructors, target, xScale, yScale) {
     var teams = groupByTeam(constructors)
+    var colorScale = d3.scaleOrdinal()
     var lineGenerator = d3.line()
         .x(function (teamYear) {
             return xScale(teamYear.Year)
@@ -33,6 +34,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
             return yScale(teamYear.Points)
         })
         .curve(d3.curveCardinal)
+        
 
     var lines = target
         .selectAll("g")
@@ -225,10 +227,45 @@ var initGraph = function (constructors) {
             "translate(" + margins.left + "," +
             margins.top + ")");
 
-
+    var yearStart = 1958
+    
+    var yearEnd = 2020
+    
+    d3.select("#allTime")
+        .on("click", function(){
+        d3.selectAll("g")
+            .remove()
+        var yearStart = 1958
+        var yearEnd = 2020
+        drawAxes(graph, margins, xScale, yScale)
+        drawLines(constructors, target, xScale, yScale)
+    })
+    
+    d3.select("#before2010")
+        .on("click", function(){
+        d3.selectAll("g")
+            .remove()
+        var yearStart = 1958
+        var yearEnd = 2010
+        drawAxes(graph, margins, xScale, yScale)
+        drawLines(constructors, target, xScale, yScale)
+    })
+    
+    d3.select("#after2010")
+        .on("click", function(){
+        d3.selectAll("g")
+            .remove()
+        var yearStart = 2010
+        var yearEnd = 2020
+        drawAxes(graph, margins, xScale, yScale);
+        drawLines(constructors, target, xScale, yScale)
+        })
+    
+    
     var xScale = d3.scaleLinear()
-        .domain([1958, 2020])
+        .domain([yearStart, yearEnd])
         .range([0, graph.width])
+    
 
     var yScale = d3.scaleLinear()
         .domain([0, 800])
@@ -237,8 +274,12 @@ var initGraph = function (constructors) {
     drawAxes(graph, margins, xScale, yScale);
     drawLines(constructors, target, xScale, yScale);
     drawLabels(graph, margins);
-    groupByTeam(constructors)
-
+    groupByTeam(constructors);
+    
+    
+    
+    
+    
 }
 
 var successFCN = function (values) {
@@ -247,14 +288,12 @@ var successFCN = function (values) {
     
     var colors = values[1]
     
-    setBanner("Here are your constructors")
     initGraph(constructors)
 
 }
 
 var failureFCN = function (error) {
     console.log("error", error)
-    setBanner("Constructors not found")
 }
 
 var constructorPromise = d3.csv("../constructors.csv")
@@ -267,9 +306,3 @@ Promise.all(constructorPromises)
     .then(successFCN, failureFCN)
 
 constructorPromise.then(successFCN, failureFCN)
-
-
-var setBanner = function (message) {
-    d3.select("#constructorBanner")
-        .text(message)
-}

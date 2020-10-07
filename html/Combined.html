@@ -1,19 +1,38 @@
 <html>
-   
-   <head>
+
+<head>
     <link href="../css/lines.css" rel="stylesheet" type="text/css">
-    
+
 
 </head>
 
 <body>
 
-    <a href="Main.html">Main Website</a>
-    <p></p>
-    
+    <p><a href="Main.html">Main Website</a></p>
+    <p>
+        <button id="allTime">All Time Points</button>
+        <button id="before2010">Before 2010</button>
+        <button id="after2010">After 2010</button>
+    </p>
+
     <svg id="constructorGraph"></svg>
     <svg id="driverGraph"></svg>
-    
+
+
+    <p>To Do:</p>
+    <ul>
+        <li>Add color for each line representing a team</li>
+        <li>Fix hovering label to accurately show driver/team
+            <ul>
+                <li>Sometimes shows the correct team, sometimes doesn't</li>
+                <li>Doesn't show points yet when hovering over a dot on the line</li>
+                <li>Driver graph shows team names from constructor graph when hovering</li>
+            </ul>
+        </li>
+        <li>Fix Buttons so that the graph is can be changed in scale</li>
+
+
+    </ul>
 
 
     <div class="hidden" id="tooltip">
@@ -27,7 +46,9 @@
     <!--<script src="../js/Combined.js"></script>-->
     <script src="../js/Dashboard.js"></script>
     <script src="../js/Dashboard3.js"></script>
-    
 
 
-</body></html>
+
+</body>
+
+</html>
