@@ -129,7 +129,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
 
-            d3.select("#name")
+            d3.select("#driverName")
                 .text(race.Name)
 
 

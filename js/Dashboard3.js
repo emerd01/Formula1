@@ -16,17 +16,18 @@ var groupByCompetitor = function (cars) {
         return dict[key];
     })
 
-    console.log("grouped", grouped);
+    //console.log("grouped", grouped);
 
     return grouped;
 }
 
 var drawLines3 = function (drivers, target, xScale, yScale) {
-    colors = d3.scaleOrdinal(d3.schemeCategory10)
-    console.log("colors", colors)
-    
-    
+    //colors = d3.scaleOrdinal(d3.schemeCategory10)
+    //console.log("colors", colors)
+
+
     var competitors = groupByCompetitor(drivers)
+    //console.log("competitors", competitors)
     var lineGenerator = d3.line()
         .x(function (driverYear) {
             return xScale(driverYear.Year)
@@ -35,7 +36,9 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
             return yScale(driverYear.Points)
         })
         .curve(d3.curveCardinal)
-    
+
+
+    var colors = d3.scaleOrdinal(d3.schemeCategory10)
 
     var lines = target
         .selectAll("g")
@@ -44,9 +47,20 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
         .append("g")
         .classed("line", true)
         .attr("fill", "none")
-        .attr("stroke", "black")
+        .attr("stroke", function (competitor) {
+            //console.log("competitor", competitor)
+            //console.log("competitor length", competitor.length)
+            if (competitor.length > 10) {
+                return colors(competitor.length)
+                //console.log("filered", competitor.length > 3)
+            }
+            else {
+                return "none"
+            }
+            
+        })
         .attr("stroke-width", 10)
-        .on("mouseover", function (race) {
+        .on("mouseover", function (competitor) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
@@ -55,8 +69,10 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                     .classed("selected", true)
                     .raise()
 
-                d3.select("#name")
-                    .text(race.Name)
+                d3.select("#driverName")
+                    .text(competitor[0].Name)
+
+
 
 
             }
@@ -69,16 +85,26 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                 .style("left", xPos + "px")
 
         })
-        .on("mouseout", function (driver) {
+        .on("mouseout", function (competitor) {
             if (!d3.select(this).classed("off")) {
                 d3.selectAll(".line")
                     .classed("selected", false)
             }
             d3.select("#tooltip")
                 .classed("hidden", true)
+            d3.select("#year")
+                .text("")
+            d3.select("#team")
+                .text("")
+            d3.select("#name")
+                .text("")
+            d3.select("#driverName")
+                .text("")
+            d3.select("#points")
+                .text("")
 
         })
-    
+
 
 
 
@@ -87,7 +113,9 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
             return driver
         })
         .attr("d", lineGenerator)
-
+        .attr("stroke", function (colors) {
+            return
+        })
 
     /*
 
@@ -113,7 +141,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
 
-            d3.select("#name")
+            d3.select("#driverName")
                 .text(race.Name)
 
 
@@ -121,9 +149,9 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
         }) //tool tip off
         .on("mouseleave", function () {
             d3.select("#tooltip")
-                .classed("hidden", true);
+                .classed("hidden", true)
         })
-        
+
         */
 
 
@@ -224,11 +252,11 @@ var initGraph3 = function (drivers) {
             "translate(" + margins.left + "," +
             margins.top + ")");
 
-    var yearStart = 1950
-        
+    var yearStart = 1958
+
     var yearEnd = 2020
-    
-    
+
+
     /*
     d3.select("#allTime")
         .on("click", function(){
@@ -268,7 +296,7 @@ var initGraph3 = function (drivers) {
     var xScale = d3.scaleLinear()
         .domain([yearStart, yearEnd])
         .range([0, graph.width])
-        
+
 
     var yScale = d3.scaleLinear()
         .domain([0, 450])
@@ -278,19 +306,19 @@ var initGraph3 = function (drivers) {
     drawLines3(drivers, target, xScale, yScale);
     drawLabels3(graph, margins);
     groupByCompetitor(drivers);
-    
-    
+
+
 
 }
 
 var successFCN3 = function (driverValues) {
-    
+
     var drivers = driverValues[0]
-    
-    //var colors = driverValues[1]
-    
+
+    //var colorslist = driverValues[1]
+
     //console.log("colors", colors)
-    
+
     initGraph3(drivers)
 
 }

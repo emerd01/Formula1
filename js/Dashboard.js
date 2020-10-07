@@ -16,8 +16,7 @@ var groupByTeam = function (cars) {
         return dict[key];
     })
 
-    console.log("grouped", grouped);
-    console.log("grouped length", grouped.length);
+    //console.log("grouped", grouped);
 
 
     return grouped;
@@ -25,6 +24,7 @@ var groupByTeam = function (cars) {
 
 var drawLines = function (constructors, target, xScale, yScale) {
     var teams = groupByTeam(constructors)
+    //console.log("teams", teams)
     var colorScale = d3.scaleOrdinal()
     var lineGenerator = d3.line()
         .x(function (teamYear) {
@@ -35,6 +35,7 @@ var drawLines = function (constructors, target, xScale, yScale) {
         })
         .curve(d3.curveCardinal)
         
+    var colors = d3.scaleOrdinal(d3.schemeCategory10)
 
     var lines = target
         .selectAll("g")
@@ -43,7 +44,12 @@ var drawLines = function (constructors, target, xScale, yScale) {
         .append("g")
         .classed("line", true)
         .attr("fill", "none")
-        .attr("stroke", "black")
+        .attr("stroke", function(constructor){
+            //console.log("constructor", constructor)
+            if (constructor.length > 1) {
+                return colors(constructor.length)
+            }
+        })
         .attr("stroke-width", 10)
         .on("mouseover", function (team) {
             if (!d3.select(this).classed("off")) {
@@ -54,6 +60,8 @@ var drawLines = function (constructors, target, xScale, yScale) {
                     .classed("selected", true)
                     .raise()
 
+                d3.select("#team")
+                    .text(team[0].Team)
 
             }
             var xPos = d3.event.pageX;
@@ -64,11 +72,11 @@ var drawLines = function (constructors, target, xScale, yScale) {
                 .style("top", yPos + "px")
                 .style("left", xPos + "px")
 
-            d3.select("#team")
+            /*d3.select("#team")
                 .text(team.Team)
 
             d3.select("points")
-                .text(team.Points)
+                .text(team.Points)*/
 
         })
         .on("mouseout", function (team) {
@@ -78,6 +86,16 @@ var drawLines = function (constructors, target, xScale, yScale) {
             }
             d3.select("#tooltip")
                 .classed("hidden", true)
+            d3.select("#year")
+                .text("")
+            d3.select("#team")
+                .text("")
+            d3.select("#name")
+                .text("")
+            d3.select("#driverName")
+                .text("")
+            d3.select("#points")
+                .text("")
 
 
 
@@ -92,8 +110,8 @@ var drawLines = function (constructors, target, xScale, yScale) {
 
 
 
-
-    /*target
+/*
+    target
         .selectAll("circle")
         .data(constructors)
         .enter()
@@ -118,18 +136,18 @@ var drawLines = function (constructors, target, xScale, yScale) {
             d3.select("#team")
                 .text(race.Team)
 
-            d3.select("points")
-                .text(race.Points)
+            d3.select("#years")
+                .text(race.length)
 
 
         }) //tool tip off
         .on("mouseleave", function () {
             d3.select("#tooltip")
-                .classed("hidden", true);
+                .classed("hidden", true)
         })
 
-
-        */
+*/
+        
 }
 
 

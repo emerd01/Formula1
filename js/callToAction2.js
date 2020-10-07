@@ -62,8 +62,8 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                     .classed("selected", true)
                     .raise()
 
-                d3.select("#name")
-                    .text(driver.Name)
+                /*d3.select("#name")
+                    .text(driver.Name)*/
 
 
             }
@@ -94,7 +94,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
         .attr("d", lineGenerator)
 
 
-    /*
+    
 
     target
         .selectAll("circle")
@@ -129,7 +129,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
                 .classed("hidden", true);
         })
 
-        */
+        
 
 
 }

@@ -17,18 +17,23 @@
 
 path
 {
-    stroke:gray;
+    
     fill:none;
     stroke-width:3;
 }
 
 .selected path
 {
-    stroke:gold;
+    /*stroke:gold;*/
     stroke-width:6;
 }
 
 #year
+{
+    font-size: 30
+}
+
+#years
 {
     font-size: 30
 }
@@ -39,6 +44,11 @@ path
 }
 
 #name
+{
+    font-size:30
+}
+
+#driverName
 {
     font-size:30
 }
