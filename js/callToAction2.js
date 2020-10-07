@@ -31,6 +31,18 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
             return yScale(driverYear.Points)
         })
         .curve(d3.curveCardinal)
+    
+    //trying to add vertical line at 2010 for graph, but nothing is showing up
+    target.append("line")
+        .attr("x1", 2010)
+        .attr("y1", 0)
+        .attr("x2", 2010)
+        .attr("y2", 450)
+        .style("stroke","red")
+        .style("stroke-width", 2)
+        .style("fill", "none")
+        
+    
 
     var lines = target
         .selectAll("g")
