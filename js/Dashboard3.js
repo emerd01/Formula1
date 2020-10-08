@@ -48,7 +48,7 @@ var drawLines3 = function (drivers, target, xScale, yScale) {
         .classed("line", true)
         .attr("fill", "none")
         .attr("stroke", function (competitor) {
-            //console.log("competitor", competitor)
+            console.log("competitor", competitor)
             //console.log("competitor length", competitor.length)
             if (competitor.length > 10) {
                 return colors(competitor[0].Name)
@@ -232,6 +232,8 @@ var drawLabels3 = function (graphDim, margins) {
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(90)")
 }
+
+
 
 
 //sets up several important variables and calls the functions for the visualization.
