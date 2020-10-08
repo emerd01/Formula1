@@ -66,6 +66,17 @@ var drawLines = function (constructors, target, xScale, yScale) {
                 d3.select("#years")
                     .text("Years in Formula 1: " + team.length)
                 
+                var teamPoints = team.reduce(function(prev, cur){
+                    //console.log("counter", prev, cur)
+                    return prev + parseInt(cur.Points)
+                }, 0)
+                
+                
+                //console.log("Total Points", competitorPoints)
+                
+                d3.select("#points")
+                    .text("Total Points Scored: " + teamPoints)
+                
 
             }
             var xPos = d3.event.pageX;
